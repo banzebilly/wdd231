@@ -1,0 +1,236 @@
+
+   /* 978px AND BELOW
+   Tablet / Small Laptop */
+
+
+@media screen and (max-width: 978px) {
+
+    header {
+        padding: 0 1rem;
+    }
+
+    header .logo {
+        padding: 0 2rem;
+    }
+
+   nav a {
+        font-size: .95rem;
+        padding: .8rem;
+        margin-right: .5rem;
+    }
+
+    .about-me {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .about-me .Profile-content p {
+        padding: 3rem 1.5rem;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .certificate {
+        padding: 3rem 1.5rem;
+    }
+
+    .certificate .btn-container {
+        gap: 1.5rem;
+    }
+}
+
+
+
+   /* 768px AND BELOW
+   Tablet */
+
+
+@media screen and (max-width: 768px) {
+
+    header{
+        grid-template-columns:1fr auto;
+        padding:0 .8rem;
+    }
+
+    header .logo {
+        padding: 0;
+    }
+
+  
+  .button{
+        display:block;
+        color: var(--white);
+    }
+
+    #menu{
+        border:none;
+        background:none;
+        font-size:2rem;
+        cursor:pointer;
+        color:var(--);
+    }
+
+    nav{
+        display:none;
+        grid-column:1/-1;
+        flex-direction:column;
+        background:var(--dark-color);
+        width:100%;
+        border-top:1px solid var(--accent-dark);
+    }
+
+    .navigation.open{
+        display:flex;
+    }
+
+    nav a{
+        width:100%;
+        margin:0;
+        padding:1rem;
+        text-align:left;
+        border-bottom:1px solid var(--accent-dark);
+    }
+
+
+    .about-me {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .about-me .Profile-content p {
+        padding: 2rem;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .profile img {
+        max-width: 500px;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .certificate {
+        padding: 3rem 1rem;
+    }
+}
+
+
+
+   /* 478px AND BELOW
+   MOBILE */
+
+
+@media screen and (max-width: 478px) {
+
+    header {
+        padding: 0 .5rem;
+    }
+
+    header .logo {
+        padding: 0;
+    }
+
+    header .logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    header span {
+        font-size: .9rem;
+    }
+
+    #menu{
+        font-size:1.9rem;
+        padding: 1rem;
+    }
+
+    nav a{
+        padding:.9rem;
+        font-size:.95rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .about-me {
+        grid-template-columns: 1fr;
+        padding: 1.5rem .8rem;
+    }
+
+    .about-me .Profile-content h2,
+    .profile h2 {
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+    }
+
+    .about-me .Profile-content p {
+        padding: 1.5rem;
+        line-height: 1.7;
+        font-size: .95rem;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .profile img {
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .certificate {
+        padding: 2.5rem .8rem;
+    }
+
+    .certificate h2 {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+
+    .certificate .btn-container {
+        gap: .5rem;
+        flex-wrap: wrap;
+    }
+
+    .certificate .btn-container button {
+        padding: .5rem .8rem;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .course-card {
+        padding: 1.5rem;
+    }
+
+    #total-credits {
+        margin-top: 1.5rem;
+        padding: .8rem 1rem;
+    }
+
+    footer {
+        padding: 1.5rem .8rem;
+    }
+
+    footer .social-links {
+        gap: 1rem;
+    }
+}

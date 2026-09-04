@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="WDD 231 Course Home Page for Banze Billy, featuring course information, certificate courses, filtering, and total credits."
+    >
+
+    <meta name="author" content="Banze Billy">
+
+    <title>WDD 231 | Banze Billy</title>
+
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+  
+
+    
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+   
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img
+                src="images/billy-logo.webp"
+                alt="Banze Billy BB logo"
+                width="60"
+                height="50"
+            >
+
+            <span>Banze Billy</span>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu" class="button"></button>
+
+        <nav class="navigation">
+            
+                <a href="index.html">Home</a>
+                <a href="chamber.html">Chamber</a>
+                <a href="https://github.com/banzebilly?tab=repositories">Final Project</a>
+           
+           
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h1>Home</h1>
+
+       
+
+        <!-- ABOUT ME -->
+        <section class="about-me">
+
+            <div class="Profile-content">
+                
+                <h2>About Me</h2>
+
+                <p>
+                    Hi, I'm Banze Billy. I'm a Software Development student who enjoys learning how websites and applications are built. Imm interested in web development, especially creating websites that are simple, responsive, and easy to use.
+
+                    I'm currently improving my skills in HTML, CSS, JavaScript, Python, and C#. I enjoy learning by building projects and solving problems along the way. My goal is to become a better developer, gain real-world experience, and build useful things with technology.
+                </p>
+              
+
+            </div>
+
+            <div class="profile">
+                 <h2>Student</h2>
+                <img src="images/billy-2.jpg" alt="" width="500" height="500" loading="lazy">
+            </div>
+
+        </section>
+
+
+        <!-- CERTIFICATE COURSES -->
+        <section class="grid">
+
+            <div class="certificate">
+
+                <h2>Certificate Courses</h2>
+
+                <div class="btn-container">
+
+                    <button id="all-btn">
+                        All
+                    </button>
+
+                    <button id="cse-btn">
+                        CSE
+                    </button>
+
+                    <button id="wdd-btn">
+                        WDD
+                    </button>
+
+                </div>
+
+
+                <div class="course-grid">
+                    <!-- JavaScript is going to generate courses here -->
+                </div>
+
+
+                <p id="total-credits">
+                    Total Credits: 0
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <!-- MY SOCIAL LINKS -->
+        <div class="social-links">
+
+            <a
+                href="https://github.com/banzebilly?tab=repositories"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/banzebilly1/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+            >
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook"
+            >
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+        </div>
+
+
+      
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Banze Billy
+            | South Africa
+        </p>
+
+
+       
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
