@@ -281,6 +281,17 @@
     .application-information {
         padding: var(--space-6);
     }
+
+    /* footer */
+    footer{
+        width: 100%;
+        padding: var(--space-3) var(--space-2);
+    }
+
+    footer .contact-info{
+        padding: var(--space-4);
+
+    }
 }
 
 
@@ -668,6 +679,16 @@
     .membership-form .primary-button {
         grid-column: auto;
         width: 100%;
+    }
+
+    
+
+    footer .contact-info{
+        justify-content: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: var(--space-3) 0; 
+        margin: 0 var(--space-3) ;
     }
 }
 

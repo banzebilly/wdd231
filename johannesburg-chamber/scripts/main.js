@@ -16,7 +16,17 @@ if (btnMenu && navLinks) {
 }
 
 
+// CURRENT YEAR
+const currentYear = new Date().getFullYear();
 
+document.querySelector("#currentyear").textContent = currentYear;
+
+
+// LAST MODIFIED
+const lastModified = document.lastModified;
+
+document.querySelector("#lastModified").textContent =
+    `Last Modified: ${lastModified}`;
 
 
 

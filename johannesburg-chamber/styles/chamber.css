@@ -1171,9 +1171,9 @@ font-weight: var(--font-weight-regular);
 
 }
 
-/* ========================================
-BENEFITS LIST
-======================================== */
+
+/* BENEFITS LIST */
+
 
 .benefits {
 display: flex;
@@ -1216,9 +1216,9 @@ font-size: var(--font-size-sm);
 
 }
 
-/* ========================================
-MEMBERSHIP BUTTON
-======================================== */
+
+/* MEMBERSHIP BUTTON */
+
 
 .membership-button {
 display: block;
@@ -1261,9 +1261,9 @@ transform: translateY(-2px);
 
 }
 
-/* ========================================
-GOLD — FEATURED CARD
-======================================== */
+
+/* GOLD — FEATURED CARD */
+
 
 .membership-card.featured {
 border: 2px solid var(--color-secondary);
@@ -1288,9 +1288,9 @@ background-color: var(--button-secondary-hover);
 border-color: var(--button-secondary-hover);
 }
 
-/* ========================================
+
 MOST POPULAR LABEL
-======================================== */
+
 
 .popular {
 position: absolute;
@@ -1317,9 +1317,9 @@ letter-spacing: 0.04rem;
 }
 
 
-/* ========================================
-   APPLICATION SECTION
-   ======================================== */
+
+   /* APPLICATION SECTION */
+
 
 .application-section {
     max-width: var(--container-max-width);
@@ -1659,5 +1659,56 @@ letter-spacing: 0.04rem;
 
 
 
+footer{
+    padding: var(--space-16);
+    background: var(--color-primary-dark);
+}
+footer .contact-info{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
 
+.contact{
+    display: block;
+    padding: var(--space-4) 0;
+}
+.contact h1{
+    color: var(--color-background-light);
+    padding-bottom: var(--space-3);
+}
+.contact p{
+    color: var(--color-border-light);
+    padding-bottom: var(--space-3);
+    max-width: 700px;
+}
+.contact .n i{
+    color: var(--color-gold-bright);
+    padding-right: var(--space-3);
+}
+.contact .n{
+    color: var(--color-border-light);
+    
+}
+footer .header-cta{
+     background: var(--color-secondary-light);
+     padding: var(--space-3) var(--space-4);
+     text-decoration: none;
+     color: var(--color-background-dark);
+     border-radius: var(--radius-md);
+}
+footer .header-cta i{
+     
+     padding-right: var(--space-2);
+     
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-border);
+    padding: var(--space-2) 0;
+}
 
