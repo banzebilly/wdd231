@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Johannesburg Chamber of Commerce connects local businesses, entrepreneurs, and professionals while promoting economic growth and business opportunities in Johannesburg, South Africa."
+    >
+
+    <meta
+        name="author"
+        content="Banze Billy"
+    >
+
+    <meta
+        name="keywords"
+        content="Johannesburg Chamber of Commerce, Johannesburg businesses, South Africa business, business directory, networking, entrepreneurs"
+    >
+
+    <meta name="theme-color" content="#0B1F3A">
+
+    <title>Johannesburg Chamber of Commerce | Directory</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/small-chamber.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-link">
+
+            <img
+                src="images/chamber-logo.svg"
+                alt="Johannesburg Chamber of Commerce logo"
+                width="70"
+                height="60"
+            >
+
+            <div class="j-container">
+                <h4>Johannesburg Chamber of Commerce</h4>
+                <p>Connect . Advocate . Grow</p>
+            </div>
+
+        </div>
+
+        <div class="header-navigation">
+
+            <button
+                id="menu"
+                aria-label="Open navigation menu"
+                class="button">
+            </button>
+
+            <nav class="navigation">
+
+                <a href="chamber.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="discover.html">Join The Chamber</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Directory Hero -->
+        <section class="directory">
+
+            <div class="dir-info">
+
+                <h5>
+                    <span>Directory</span>
+                </h5>
+
+                <h1>Member Business Directory</h1>
+
+                <p>
+                    Browse businesses, search by name, filter by sector,
+                    or view businesses by membership level.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Directory -->
+        <section class="members">
+
+            <!-- Filters -->
+            <form class="directory-filters">
+
+                <!-- Search -->
+                <div class="search-box">
+
+                    <label for="search">Search</label>
+
+                    <div class="search-input">
+
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            aria-hidden="true">
+                        </i>
+
+                        <input
+                            type="search"
+                            id="search"
+                            name="search"
+                            placeholder="Search businesses..."
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Category -->
+                <div class="filter-group">
+
+                    <label for="category">Category</label>
+
+                    <select id="category" name="category">
+
+                        <option value="">All categories</option>
+
+                        <option value="technology">
+                            Technology
+                        </option>
+
+                        <option value="finance">
+                            Finance
+                        </option>
+
+                        <option value="retail">
+                            Retail
+                        </option>
+
+                        <option value="hospitality">
+                            Hospitality
+                        </option>
+
+                        <option value="beauty">
+                            Beauty & Wellness
+                        </option>
+
+                        <option value="construction">
+                            Construction
+                        </option>
+
+                        <option value="professional">
+                            Professional Services
+                        </option>
+
+                        <option value="tourism">
+                            Tourism
+                        </option>
+
+                        <option value="restaurants">
+                            Restaurants
+                        </option>
+
+                        <option value="non-profit">
+                            Non-Profit
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Membership -->
+                <div class="filter-group">
+
+                    <label for="membership">Membership</label>
+
+                    <select id="membership" name="membership">
+
+                        <option value="">All levels</option>
+
+                        <option value="gold">
+                            Gold
+                        </option>
+
+                        <option value="silver">
+                            Silver
+                        </option>
+
+                        <option value="non-profit">
+                            Non-Profit
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- View Controls -->
+                <div class="view-controls">
+
+                    <button
+                        type="button"
+                        id="grid-view"
+                        class="active"
+                        aria-label="Grid view"
+                        aria-pressed="true"
+                    >
+                        <i class="fa-solid fa-grip"></i>
+                    </button>
+
+                    <button
+                        type="button"
+                        id="list-view"
+                        aria-label="List view"
+                        aria-pressed="false"
+                    >
+                        <i class="fa-solid fa-list"></i>
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- Number of Results -->
+            <p class="count"></p>
+
+
+            <!-- JavaScript renders businesses here -->
+            <div class="card-member"></div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <div class="become-member">
+
+                <div class="contact-info">
+
+                    <div class="contact">
+
+                        <h1>Grow Your Business With Us</h1>
+
+                        <p>
+                            Membership starts at R750 a year and includes
+                            a directory listing, event access and direct
+                            representation in the city's business forums.
+                        </p>
+
+                        <div class="n">
+
+                            <i
+                                class="fa-solid fa-phone"
+                                aria-hidden="true">
+                            </i>
+
+                            Prefer to talk first?
+                            Call +27 11 339 5500
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="join.html" class="header-cta">
+
+                        <i
+                            class="fa-solid fa-user-plus"
+                            aria-hidden="true">
+                        </i>
+
+                        Become a Member
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Banze Billy | South Africa
+            </p>
+
+            <p id="lastModified"></p>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
