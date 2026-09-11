@@ -504,7 +504,7 @@
 
     .about-busness .data {
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: var(--space-4);
     }
 
@@ -528,7 +528,7 @@
 
     .city-weather .container {
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: var(--space-4);
     }
 
@@ -858,7 +858,7 @@
 
     .about-busness .data {
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: var(--space-4);
     }
 
@@ -902,7 +902,7 @@
     }
 
     .wind {
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--space-4);
         padding: var(--space-4) 1rem;
     }
@@ -985,8 +985,9 @@
       /* event stying */
     .event-section{
         width: 100%;
-        padding: 0;
+        padding: var(--space-6);
     }
+
     .event-section .event-container{
         width: 100%;
         grid-template-columns: 1fr;
