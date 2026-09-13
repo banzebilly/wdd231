@@ -1,6 +1,4 @@
-
-// display membership 
-
+// Display membership
 
 async function loadMembershipLevels() {
     try {
@@ -97,7 +95,6 @@ function setupMembershipButtons() {
 
             membershipSelect.value =
                 selectedMembership.toLowerCase();
-
         });
 
     });
