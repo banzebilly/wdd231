@@ -262,22 +262,22 @@ nav a.active {
     gap: 1.3rem;
     
 }
-.hero .info h5 span{
-   color: var(--color-secondary-dark);
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   font-weight: var(--font-weight-bold);
+
+.hero .info h5 span {
+    color: var(--color-secondary-dark);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--font-weight-bold);
 }
-.hero .info h1{
-   color: var(--color-background-light);
+ .hero .info h1 {
+    color: var(--color-white);
     max-width: 600px;
-   
-   letter-spacing: 2px;
-   font-weight: var(--font-weight-bold);
-   
+    letter-spacing: 2px;
+    font-weight: var(--font-weight-bold);
 }
+
 .hero .info p{
-   color: var(--color-border-light);
+   color: var(--color-white);
    
    
    font-weight: var(--font-size-xs);
@@ -1686,12 +1686,12 @@ footer .contact-info{
     color: var(--color-border-light);
     
 }
-footer .header-cta{
-     background: var(--color-secondary-light);
-     padding: var(--space-3) var(--space-4);
-     text-decoration: none;
-     color: var(--color-background-dark);
-     border-radius: var(--radius-md);
+footer .header-cta {
+    background: var(--color-secondary-light);
+    padding: var(--space-3) var(--space-4);
+    text-decoration: none;
+    color: var(--color-text-on-gold);
+    border-radius: var(--radius-md);
 }
 footer .header-cta i{
      
