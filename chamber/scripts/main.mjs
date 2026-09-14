@@ -10,11 +10,12 @@ import { loadShortMember } from "./short-member.mjs";
 import { setupFooter } from "./footer.mjs";
 import { setupNavigation } from "./navigation.mjs";
 
-getWeather();
+
 loadEvents();
 loadShortMember();
 setupFooter();
 setupNavigation();
+getWeather();
 
 
 
