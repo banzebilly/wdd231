@@ -1,46 +1,34 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // SHORT MEMBERS ON THE HOME PAGE
 
 let shortMembers = [];
 
 const membersContainer = document.querySelector("#card-container");
 
-async function loadShortMember() {
+export async function loadShortMember() {
+
     try {
-        // Get the JSON file
+
+      
         const response = await fetch("data/short-members.json");
 
-        // Check if the JSON file loaded correctly
+       
         if (!response.ok) {
             throw new Error("Could not load short-members.json");
         }
 
-        // Convert the JSON response into JavaScript data
+       
         shortMembers = await response.json();
 
-        // Loop through each member
+       
         shortMembers.forEach(member => {
 
-            // Create a new div for the card
+           
             const card = document.createElement("div");
 
-            // Add the card CSS class
+          
             card.classList.add("card");
 
-            // Create the card HTML
+           
             card.innerHTML = `
                 <img
                     src="images/${member.image}"
@@ -82,14 +70,3 @@ async function loadShortMember() {
         console.error("Error loading short members:", error);
     }
 }
-
-// Start loading the members
-loadShortMember();
-
-
-
-
-
-
-
-
