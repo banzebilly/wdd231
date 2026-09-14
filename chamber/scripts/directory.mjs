@@ -1,13 +1,13 @@
 
-//the MEMBERS DATA
+//Billy
 
 
-// This is   store the businesses loaded from members.json.
+// to this is   store the businesses loaded from members.json.
 let members = [];
 
 
 
-// DOM ELEMENTS
+
 
 
 const cardContainer = document.querySelector(".card-member");
@@ -33,10 +33,10 @@ let currentView = "grid";
 
 
 
-// LOAD MEMBERS FROM JSON
 
 
-async function loadMembers() {
+
+export async function loadMembers() {
 
     try {
 
@@ -56,7 +56,7 @@ async function loadMembers() {
         members = await response.json();
 
 
-        // Check the data in the console
+        // to Check the data in the console
         // console.log("Members loaded:", members);
 
 

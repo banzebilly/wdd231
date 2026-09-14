@@ -1,6 +1,6 @@
 // Display membership
 
-async function loadMembershipLevels() {
+ export async function loadMembershipLevels() {
     try {
         const response = await fetch("data/membership.json");
 
