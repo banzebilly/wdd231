@@ -1,0 +1,38 @@
+[
+    {
+        "day": "17",
+        "month": "SEP",
+        "category": "Networking",
+        "title": "Sandton Business Breakfast",
+        "date": "Thursday, 17 September · 07:30",
+        "location": "Sandton Convention Centre",
+        "description": "Quarterly economic outlook briefing with a panel of Gauteng economists, followed by structured networking."
+    },
+    {
+        "day": "29",
+        "month": "SEP",
+        "category": "Training",
+        "title": "SMME Funding Workshop",
+        "date": "Tuesday, 29 September · 09:00",
+        "location": "Chamber House, Braamfontein",
+        "description": "A practical session on grant applications, development finance and preparing a funding-ready business plan."
+    },
+    {
+        "day": "10",
+        "month": "OCT",
+        "category": "Expo",
+        "title": "Joburg Township Trade Expo",
+        "date": "Saturday, 10 October · 10:00",
+        "location": "Soweto Theatre Precincts",
+        "description": "Two hundred township enterprises exhibit to buyers, retailers and procurement teams from across Gauteng."
+    },
+    {
+        "day": "21",
+        "month": "OCT",
+        "category": "Forum",
+        "title": "Women in Business Forum",
+        "date": "Wednesday, 21 October · 17:30",
+        "location": "Rosebank Business Hub",
+        "description": "Evening forum on scaling women-led enterprises, with mentorship matching for Chamber members."
+    }
+]

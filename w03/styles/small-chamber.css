@@ -1,0 +1,1083 @@
+
+/* =========================================
+   TABLET & SMALL LAPTOP
+   978px and below
+   ========================================= */
+
+@media screen and (max-width: 978px) {
+
+    /* ================================
+       HEADER
+       ================================ */
+
+    header {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .logo-link {
+        padding: 0;
+    }
+
+    .logo-link img {
+        width: 65px;
+        height: auto;
+    }
+
+    .j-container h4 {
+        font-size: var(--font-size-base);
+    }
+
+    .j-container p {
+        font-size: var(--font-size-sm);
+    }
+
+    .navigation a {
+        font-size: 0.95rem;
+        padding: 8px;
+        margin-right: 0.5rem;
+    }
+
+
+    /* ================================
+       MAIN
+       ================================ */
+
+    main {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    /* ================================
+       HERO
+       ================================ */
+
+    .hero {
+        width: 100%;
+        min-height: 450px;
+        padding: 2rem 0;
+    }
+
+    .hero .info {
+        width: 100%;
+        max-width: 800px;
+        padding: 2rem 1.5rem;
+        gap: 1.2rem;
+    }
+
+    .hero .info h1 {
+        max-width: 600px;
+    }
+
+    .hero .info p {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .info-btn {
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+
+    .info-btn a {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+
+
+    /* ================================
+       ABOUT US
+       ================================ */
+
+    .about-us {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .about-us .who-we-re {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .about-us .who-we-re .main-info {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .about-us .who-we-re .main-info p {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .about-us .who-we-re .main-image {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .about-us .who-we-re .main-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+        padding-top: 0;
+    }
+
+
+    /* ================================
+       ADVOCACY
+       ================================ */
+
+    .advocancy {
+        width: 100%;
+        max-width: 700px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 var(--space-4);
+    }
+
+
+    /* ================================
+       ABOUT BUSINESS
+       ================================ */
+
+    .about-busness {
+        width: 100%;
+        padding: var(--space-12) var(--space-8);
+    }
+
+    .about-busness .data {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-4);
+    }
+
+    .about-busness .data .local-busness {
+        padding: var(--space-3) 1rem;
+    }
+
+
+    /* ================================
+       WEATHER
+       ================================ */
+
+    .city-weather {
+        width: 100%;
+        padding: var(--space-12) 1.2rem;
+    }
+
+    .city-weather .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .container .weather,
+    .container .meter {
+        width: 100%;
+    }
+
+
+    /* ================================
+       MEMBERS
+       ================================ */
+
+    .members {
+        width: 100%;
+        padding: var(--space-12) 1.2rem;
+    }
+
+    .members .direction {
+        width: 100%;
+        align-items: center;
+        gap: var(--space-4);
+    }
+
+    .members .direction h2 {
+        max-width: 600px;
+    }
+
+    .card-member {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-4);
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* event stying */
+    .event-section{
+        width: 100%;
+        padding: 0;
+    }
+    .event-section .event-container{
+        width: 100%;
+        
+       
+    }
+    .event-section .event-card{
+        width: 100%;
+        padding: var(--space-3);
+    }
+
+
+    /* directory styling */
+    .directory {
+        padding: var(--space-10);
+    }
+
+    .directory .dir-info {
+        padding: var(--space-8) 1rem;
+    }
+
+    .directory .dir-info p {
+        max-width: 100%;
+    }
+
+    /* form section styling */
+    .form-section{
+        width: 100%;
+    }
+    .form-section .directiory-filters{
+        grid-template-columns: 2fr 1fr;
+        
+    }
+     .search-box {
+        grid-column: 1 / -1;
+    }
+
+    .view-controls {
+        justify-self: end;
+    }
+
+
+    .membership-section{
+        width: 100%;
+        padding: 0;
+    }
+
+   
+    .section-heading{
+        margin: var(--space-4);
+    }
+
+    .application-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+
+        padding: var(--space-6);
+    }
+
+    .application-information {
+        padding: var(--space-6);
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        padding: var(--space-3) var(--space-2);
+    }
+
+    footer .contact-info{
+        padding: var(--space-4);
+
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   768px and below
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* ================================
+       HEADER
+       ================================ */
+
+    header {
+        position: relative;
+        width: 100%;
+        min-height: var(--header-height);
+        padding: 0 1rem;
+    }
+
+    .logo-link {
+        padding: 0;
+    }
+
+    .logo-link img {
+        width: 60px;
+        height: auto;
+    }
+
+    .j-container h4 {
+        font-size: var(--font-size-base);
+    }
+
+    .j-container p {
+        font-size: var(--font-size-xs);
+    }
+
+
+    /* ================================
+       MOBILE MENU
+       ================================ */
+
+    #menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        color: var(--color-primary-dark);
+        font-size: 2rem;
+
+        cursor: pointer;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.open {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: var(--color-white);
+        box-shadow: var(--shadow-md);
+
+        margin: 0;
+        padding: 0;
+
+        z-index: var(--z-menu);
+    }
+
+    .navigation a {
+        width: 100%;
+        padding: 1rem;
+
+        margin: 0;
+
+        text-align: left;
+
+        border-bottom: 1px solid var(--color-border-light);
+
+        color: var(--color-primary-dark);
+    }
+
+    .navigation a:last-child {
+        border-radius: 0;
+    }
+
+
+    /* ================================
+       HERO
+       ================================ */
+
+    .hero {
+        width: 100%;
+        min-height: 450px;
+        padding: 1rem 0;
+    }
+
+    .hero .info {
+        width: 100%;
+        padding: 2rem 1.2rem;
+    }
+
+    .hero .info h1 {
+        font-size: var(--font-size-3xl);
+        letter-spacing: 1px;
+    }
+
+    .hero .info p {
+        width: 100%;
+        font-size: var(--font-size-base);
+        letter-spacing: 1px;
+    }
+
+    .info-btn {
+        width: 100%;
+        gap: 0.7rem;
+        padding-top: 1.5rem;
+    }
+
+    .info-btn a {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+
+    /* ================================
+       ABOUT US
+       ================================ */
+
+    .about-us {
+        width: 100%;
+        padding: 0 0.8rem;
+    }
+
+    .about-us .who-we-re {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .about-us .who-we-re .main-info {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .about-us .who-we-re .main-info h2 {
+        max-width: 100%;
+    }
+
+    .about-us .who-we-re .main-info p {
+        width: 100%;
+        max-width: 100%;
+        font-size: var(--font-size-base);
+    }
+
+    .about-us .who-we-re .main-image {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .about-us .who-we-re .main-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+
+    /* ================================
+       ADVOCACY
+       ================================ */
+
+    .advocancy {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .advocancy .adv {
+        width: 100%;
+        padding: 0.8rem 0;
+    }
+
+
+    /* ================================
+       ABOUT BUSINESS
+       ================================ */
+
+    .about-busness {
+        width: 100%;
+        padding: var(--space-10) 1.2rem;
+    }
+
+    .about-busness .data {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4);
+    }
+
+    .about-busness .data .local-busness {
+        width: 100%;
+    }
+
+
+    /* ================================
+       WEATHER
+       ================================ */
+
+    .city-weather {
+        width: 100%;
+        padding: var(--space-10) 1.2rem;
+    }
+
+    .city-weather h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .city-weather .container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4);
+    }
+
+    .container .weather,
+    .container .meter {
+        width: 100%;
+    }
+
+    .container .weather .CBD {
+        margin: var(--space-3);
+    }
+
+    .wind {
+        padding: var(--space-4) 1rem;
+    }
+
+
+    /* ================================
+       MEMBERS
+       ================================ */
+
+    .members {
+        width: 100%;
+        padding: var(--space-10) 1.2rem;
+    }
+
+    .members .direction {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+
+    .members .direction h2,
+    .members .direction a {
+        padding-bottom: var(--space-3);
+    }
+
+    .card-member {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* event style  */
+      /* event stying */
+    .event-section{
+        width: 100%;
+        padding: 0;
+    }
+    .event-section .event-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding-inline: 0 var(--space-3);
+        
+       
+    }
+    .event-section .event-card{
+        width: 100%;
+        flex-direction: column;
+    }
+
+       /* directory styling */
+    .directory {
+        padding: var(--space-4);
+    }
+
+    .directory .dir-info {
+        padding: var(--space-6) 0.5rem;
+    }
+
+    .directory .dir-info h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        letter-spacing: 0.5px;
+    }
+
+    .directory .dir-info p {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+    }
+
+    /* form section styling */
+    .form-section{
+        width: 100%;
+    }
+     .directory-filters {
+        grid-template-columns: 1fr;
+    }
+    .search-box,
+    .view-controls {
+        grid-column: auto;
+    }
+
+    .view-controls {
+        justify-self: stretch;
+        justify-content: flex-end;
+    }
+    
+
+
+
+    .membership-section { 
+        padding-top: var(--space-12);
+         padding-bottom: var(--space-12); }
+    .membership-grid {
+        grid-template-columns: 1fr; 
+    } 
+    .membership-card.featured { 
+        grid-column: auto; width: auto; 
+    } 
+    .membership-section .section-heading h2 {
+         font-size: var(--font-size-2xl);
+    }
+
+
+    .application-section {
+        padding-top: var(--space-12);
+        padding-bottom: var(--space-12);
+    }
+
+    .application-section .section-heading h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .membership-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .form-checkbox {
+        grid-column: auto;
+    }
+
+    .membership-form .primary-button {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    
+
+    footer .contact-info{
+        justify-content: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: var(--space-3) 0; 
+        margin: 0 var(--space-3) ;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   478px and below
+   ========================================= */
+
+@media screen and (max-width: 478px) {
+
+    /* ================================
+       HEADER
+       ================================ */
+
+    header {
+        width: 100%;
+        padding: 0;
+    }
+
+    .logo-link {
+        padding: 0;
+    }
+
+    .logo-link img {
+        width: 55px;
+        height: auto;
+    }
+
+    .j-container h4 {
+        font-size: 0.9rem;
+    }
+
+    .j-container p {
+        font-size: 0.75rem;
+    }
+
+    #menu {
+        width: 44px;
+        height: 44px;
+        padding-right: 1rem;
+    }
+
+
+    /* ================================
+       MOBILE NAVIGATION
+       ================================ */
+
+    .navigation.open {
+        width: 100%;
+    }
+
+    .navigation a {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+
+    /* ================================
+       HERO
+       ================================ */
+
+    .hero {
+        width: 100%;
+        min-height: 400px;
+        padding: 1rem 0;
+        background-position: center;
+    }
+
+    .hero .info {
+        width: 100%;
+        padding: 1.5rem 1.2rem;
+        gap: 1rem;
+    }
+
+    .hero .info h1 {
+        font-size: var(--font-size-2xl);
+        letter-spacing: 0.5px;
+    }
+
+    .hero .info p {
+        font-size: var(--font-size-sm);
+        letter-spacing: 0.5px;
+    }
+
+    .info-btn {
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .info-btn a {
+        flex: 1;
+        text-align: center;
+        padding: 0.65rem 0.6rem;
+        font-size: 0.75rem;
+    }
+
+
+    /* ================================
+       ABOUT US
+       ================================ */
+
+    .about-us {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-us .who-we-re {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .about-us .who-we-re .main-info {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .about-us .who-we-re .main-info h4 {
+        font-size: var(--font-size-sm);
+    }
+
+    .about-us .who-we-re .main-info h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .about-us .who-we-re .main-info p {
+        font-size: var(--font-size-sm);
+        line-height: 1.6;
+    }
+
+    .about-us .who-we-re .main-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-us .who-we-re .main-image img {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+    }
+
+
+    /* ================================
+       ADVOCACY
+       ================================ */
+
+    .advocancy {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding-top: var(--space-3);
+    }
+
+    .advocancy .adv {
+        padding: 0.7rem 0;
+    }
+
+
+    /* ================================
+       ABOUT BUSINESS
+       ================================ */
+
+    .about-busness {
+        width: 100%;
+        padding: var(--space-8) 1rem;
+    }
+
+    .about-busness .data {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4);
+    }
+
+    .about-busness .data .local-busness {
+        width: 100%;
+        padding: var(--space-2) 0.8rem;
+    }
+
+
+    /* ================================
+       WEATHER
+       ================================ */
+
+    .city-weather {
+        width: 100%;
+        padding: var(--space-8) 1rem;
+    }
+
+    .city-weather h4 {
+        padding-top: var(--space-4);
+    }
+
+    .city-weather h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .city-weather .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .container .weather,
+    .container .meter {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container .weather .CBD {
+        margin: var(--space-3);
+    }
+
+    .wind {
+        flex-direction: row;
+        gap: var(--space-4);
+        padding: var(--space-4) 1rem;
+    }
+
+    .container .meter {
+        padding: var(--space-3);
+    }
+
+    .container .meter .days {
+        gap: var(--space-2);
+        overflow-x: auto;
+    }
+
+
+    /* ================================
+       MEMBERS
+       ================================ */
+
+    .members {
+        width: 100%;
+        padding: var(--space-8) 1rem;
+    }
+
+    .members > h4 {
+        font-size: var(--font-size-sm);
+    }
+
+    .members .direction {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+
+    .members .direction h2 {
+        font-size: var(--font-size-xl);
+        padding-bottom: var(--space-2);
+    }
+
+    .members .direction a {
+        font-size: var(--font-size-sm);
+        padding-bottom: var(--space-4);
+    }
+
+    .card-member {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card .member-info {
+        padding: var(--space-4);
+    }
+
+    .member-info .btn-m {
+        gap: var(--space-2);
+        margin-bottom: var(--space-3);
+    }
+
+    .member-info .btn-m .badge {
+        font-size: var(--font-size-xs);
+    }
+
+    .member-info p {
+        font-size: var(--font-size-sm);
+        line-height: 1.5;
+    }
+
+    /* event style  */
+      /* event stying */
+    .event-section{
+        width: 100%;
+        padding: var(--space-6);
+    }
+
+    .event-section .event-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding-inline: 0 var(--space-3);
+        
+       
+    }
+    .event-section .event-card{
+        width: 100%;
+        flex-direction: column;
+    }
+
+       /* directory styling */
+    .derectory{
+        width: 100%;
+        padding: 0;
+        
+    }
+    .derectory .dir-info{
+        padding:var(--space-4);
+        gap: var(--space-4);
+    }
+    .derectory .dir-info p{
+        width: 100%;
+    }
+
+    /* form section styling */
+    .form-section{
+        width: 100%;
+    }
+    .form-section .directiory-filters{
+        width: 100%;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .membership-section {
+         padding: var(--space-10) var(--space-4); 
+        } 
+    .membership-section .section-heading { margin-bottom: var(--space-8);
+     } 
+    .membership-section .section-heading h2 { font-size: var(--font-size-xl); 
+    } 
+    .membership-card { padding: var(--space-6);
+     } 
+     .membership-card h3 { font-size: var(--font-size-xl); 
+    }
+     .membership-description { min-height: auto; 
+    } 
+    .membership-price { font-size: var(--font-size-3xl); 
+    } 
+    .benefits { gap: var(--space-3); 
+    } 
+    .benefits li { font-size: var(--font-size-sm); 
+    } 
+    .popular { right: var(--space-4); }
+    
+
+
+
+/* apliclation  */
+    .application-section {
+        padding: var(--space-10) var(--space-4);
+    }
+
+    .application-section .section-heading {
+        margin-bottom: var(--space-8);
+    }
+
+    .application-section .section-heading h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .application-wrapper {
+        padding: var(--space-4);
+
+        border-radius: var(--radius-md);
+    }
+
+    .application-information {
+        padding: var(--space-5);
+    }
+
+    .application-information h3 {
+        font-size: var(--font-size-xl);
+    }
+
+    .membership-form {
+        gap: var(--space-4);
+    }
+
+}
+
