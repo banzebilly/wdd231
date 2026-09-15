@@ -465,6 +465,41 @@ main h1::after {
 
 }
 
+/* MODAL */
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+    position: relative;
+}
+
+::backdrop {
+    background: rgb(0 0 0 / 60%);
+}
+
+dialog button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+dialog h2 {
+    color: #092B58;
+}
+
+dialog p {
+    margin: .5rem 0;
+}
+
 footer {
 
     background: var(--dark-color);

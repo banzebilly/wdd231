@@ -1,4 +1,6 @@
+
 const courses = [
+
     {
         subject: "CSE",
         number: 110,
@@ -70,15 +72,54 @@ const courses = [
         technology: ["HTML", "CSS", "JavaScript"],
         completed: false
     }
+
 ];
 
 
-// let me get HTML elements
+// Get HTML elements
 const courseGrid = document.querySelector(".course-grid");
 const totalCreditsElement = document.querySelector("#total-credits");
+const courseDetails = document.querySelector("#course-details");
 
 
-// Displaying courses
+// the function which will desplay the course details in the modal
+const displayCourseDetails = (course) => {
+
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+
+        <h2>${course.subject} ${course.number}</h2>
+
+        <h3>${course.title}</h3>
+
+        <p>
+            <strong>Credits:</strong> ${course.credits}
+        </p>
+
+        <p>
+            <strong>Certificate:</strong> ${course.certificate}
+        </p>
+
+        <p>${course.description}</p>
+
+        <p>
+            <strong>Technologies:</strong>
+            ${course.technology.join(", ")}
+        </p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeButton =
+        document.querySelector("#closeModal");
+
+    closeButton.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+
+//to  display courses
 const displayCourses = (courseList) => {
 
     courseGrid.innerHTML = "";
@@ -104,14 +145,20 @@ const displayCourses = (courseList) => {
             </span>
         `;
 
+        // to open modal when course card is clicked
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         courseGrid.appendChild(card);
+
     });
 
     calculateTotalCredits(courseList);
 };
 
 
-// Calculating the total credits
+// to caalculate total credits
 const calculateTotalCredits = (courseList) => {
 
     const totalCredits = courseList.reduce(
@@ -124,7 +171,7 @@ const calculateTotalCredits = (courseList) => {
 };
 
 
-// let Filter  the courses
+//to filt  courses
 const filterCourses = (category) => {
 
     if (category === "ALL") {
@@ -142,7 +189,7 @@ const filterCourses = (category) => {
 };
 
 
-
+//to  fiilter buttons
 document.querySelector("#all-btn").addEventListener(
     "click",
     () => filterCourses("ALL")
@@ -159,5 +206,24 @@ document.querySelector("#wdd-btn").addEventListener(
 );
 
 
-// Displaying  allthe  courses when page load
+
 displayCourses(courses);
+
+
+//to close modal when clicking outside the dialog
+courseDetails.addEventListener("click", (event) => {
+
+    const dialogDimensions =
+        courseDetails.getBoundingClientRect();
+
+    if (
+        event.clientX < dialogDimensions.left ||
+        event.clientX > dialogDimensions.right ||
+        event.clientY < dialogDimensions.top ||
+        event.clientY > dialogDimensions.bottom
+    ) {
+        courseDetails.close();
+    }
+
+});
+
