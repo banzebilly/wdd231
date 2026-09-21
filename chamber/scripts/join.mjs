@@ -1,6 +1,7 @@
-// Display membership
 
- export async function loadMembershipLevels() {
+//to display membership levels
+
+export async function loadMembershipLevels() {
     try {
         const response = await fetch("data/membership.json");
 
@@ -11,7 +12,6 @@
         const memberships = await response.json();
 
         displayMembershipLevels(memberships);
-
     } catch (error) {
         console.error("Error loading membership levels:", error);
     }
@@ -19,14 +19,13 @@
 
 
 function displayMembershipLevels(memberships) {
-
     const container = document.querySelector("#membership-grid");
 
     if (!container) return;
 
     container.innerHTML = "";
 
-    memberships.forEach(membership => {
+    memberships.forEach((membership) => {
 
         const card = document.createElement("article");
 
@@ -37,9 +36,10 @@ function displayMembershipLevels(memberships) {
         }
 
         card.innerHTML = `
-            ${membership.featured
-                ? `<span class="popular">Most popular</span>`
-                : ""
+            ${
+                membership.featured
+                    ? `<span class="popular">Most popular</span>`
+                    : ""
             }
 
             <h3>${membership.name}</h3>
@@ -50,22 +50,26 @@ function displayMembershipLevels(memberships) {
 
             <p class="membership-price">
                 ${membership.price}
-                <span>per month</span>
+                <span>per year</span>
             </p>
 
             <ul class="benefits">
-                ${membership.benefits.map(benefit => `
-                    <li>
-                        <i class="fa-solid fa-check"></i>
-                        ${benefit}
-                    </li>
-                `).join("")}
+                ${membership.benefits
+                    .map(
+                        (benefit) => `
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                ${benefit}
+                            </li>
+                        `
+                    )
+                    .join("")}
             </ul>
 
             <a
                 href="#application"
                 class="membership-button"
-                data-membership="${membership.name}"
+                data-membership="${membership.value}"
             >
                 Apply for ${membership.name}
             </a>
@@ -78,27 +82,27 @@ function displayMembershipLevels(memberships) {
 }
 
 
+
+
 function setupMembershipButtons() {
+    const buttons = document.querySelectorAll(".membership-button");
 
-    const buttons =
-        document.querySelectorAll(".membership-button");
+    const membershipSelect = document.querySelector("#membership");
 
-    const membershipSelect =
-        document.querySelector("#membership");
+    if (!membershipSelect) return;
 
-    buttons.forEach(button => {
+    buttons.forEach((button) => {
 
         button.addEventListener("click", () => {
 
             const selectedMembership =
                 button.dataset.membership;
 
-            membershipSelect.value =
-                selectedMembership.toLowerCase();
+            membershipSelect.value = selectedMembership;
         });
-
     });
 }
 
 
 loadMembershipLevels();
+

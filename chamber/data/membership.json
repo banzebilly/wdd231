@@ -1,6 +1,34 @@
+
 [
     {
+        "name": "Non-Profit",
+        "value": "np",
+        "description": "For NPOs, co-operatives and community organisations.",
+        "price": "R150",
+        "benefits": [
+            "Full directory listing",
+            "Free entry to training workshops",
+            "Access to funder introductions",
+            "Volunteer and skills matching"
+        ],
+        "featured": false
+    },
+    {
+        "name": "Bronze",
+        "value": "bronze",
+        "description": "For small and growing businesses.",
+        "price": "R300",
+        "benefits": [
+            "Business directory listing",
+            "Member newsletter",
+            "Access to networking events",
+            "Training opportunities"
+        ],
+        "featured": false
+    },
+    {
         "name": "Silver",
+        "value": "silver",
         "description": "For established small and medium businesses.",
         "price": "R450",
         "benefits": [
@@ -13,6 +41,7 @@
     },
     {
         "name": "Gold",
+        "value": "gold",
         "description": "For companies that want visibility and a seat at the table.",
         "price": "R1 200",
         "benefits": [
@@ -23,17 +52,6 @@
             "Logo on Chamber event material"
         ],
         "featured": true
-    },
-    {
-        "name": "Non-Profit",
-        "description": "For NPOs, co-operatives and community organisations.",
-        "price": "R150",
-        "benefits": [
-            "Full directory listing",
-            "Free entry to training workshops",
-            "Access to funder introductions",
-            "Volunteer and skills matching"
-        ],
-        "featured": false
     }
 ]
+

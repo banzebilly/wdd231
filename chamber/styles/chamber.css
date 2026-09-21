@@ -1538,9 +1538,9 @@ border-color: var(--button-secondary-hover);
 }
 
 
-/* ========================================
-   FOCUS STATE
-   ======================================== */
+
+   /* FOCUS STATE */
+   
 
 .form-group input:focus,
 .form-group select:focus,
