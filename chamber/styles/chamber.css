@@ -799,6 +799,445 @@ nav a.active {
     font-size: smaller;
 }
 
+/* last visit in the discover page */
+.last-visit-section{
+    background: var(--color-background-dark);
+}   
+.last-visit-section .visit{
+    padding: var(--space-16);
+
+    
+}   
+.last-visit-section .visit h5{
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--space-2);
+}
+.last-visit-section .visit .grid-visit-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px , 1fr));
+    gap: var(--space-3);
+}
+.last-visit-section .visit .grid-visit-card .joburg{
+   
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+ 
+    padding: var(--space-2);
+  
+    
+    
+
+
+}
+.last-visit-section .visit .grid-visit-card .joburg .firt{
+    display: flex;
+    padding: 0 var(--space-2);
+   
+
+
+}
+.last-visit-section .visit .grid-visit-card .joburg .firt i{
+    width: 50px;
+    height: 50px;
+    background: var(--color-white);
+    box-shadow: var(--shadow-md);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--space-2);
+    border-radius: var(--radius-md);
+  
+
+
+}
+
+
+.joburg:last-child{
+    background: var(--color-primary-dark);
+    border-left: 3px solid var(--color-gold-bright);
+    
+}
+.joburg:last-child p{
+    color: var(--color-background-light);
+    font-size: var(--font-size-sm);
+}
+
+.joburg i{
+   color: var(--color-secondary-dark);
+   padding-right: var(--space-2);
+  font-size: var(--space-6);
+}
+
+.joburg .p{
+    display: flex;
+    flex-direction: column;
+}
+.joburg .p p:first-child{
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+}
+ 
+
+
+/* city statistics section  */
+.city-statistics{
+    background: var(--color-surface);
+    padding: var(--space-16);
+}
+   
+.city-statistics .city-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+
+    margin-bottom: var(--space-12);
+}
+.city-statistics .city-flex .section-head h5{
+    color: var(--color-secondary-dark);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: var(--space-2);
+}
+.city-statistics .city-flex .section-head h2{
+    color: var(--color-text);
+    font-weight: var(--font-size-4xl);
+    
+    letter-spacing: 2px;
+    
+}
+.city-statistics .city-flex .section-p p{
+    color: var(--color-text);
+    max-width: 450px;
+    
+}
+
+.city-statistics .statistics-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    
+    
+
+}
+
+
+.city-statistics .statistics-grid .stat-card{
+    border-right: 1px solid var(--color-border);
+    padding: var(--space-12);
+
+}
+.city-statistics .statistics-grid .stat-card:last-child{
+    border-right: none;
+
+}
+
+.stat-card h3{
+    font-size: var(--font-size-4xl);
+    padding-bottom: var(--space-3);
+    color: var(--color-primary-dark);
+}
+.stat-card p{
+    font-size: var(--font-size-xs);
+    
+    color: var(--color-text);
+}
+.district-card:hover{
+   transform: translateY(-3%);
+   transition: var(--transition-normal);
+}
+.city-statistics .industries-flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--space-6);
+    padding-top: var(--space-6);
+    color: var(--color-text);
+    flex-wrap: wrap;
+    
+}
+.city-statistics .industries-flex p{
+    font-size: var(--font-size-sm);
+}
+.city-statistics .industries-flex p:first-child{
+    text-transform: uppercase;
+}
+
+
+
+
+/* city districs section  */
+.city-districs{
+    background: var(--color-background-light);
+    padding: var(--space-16);
+}
+.city-districs .city-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+
+    margin-bottom: var(--space-12);
+}
+.city-districs .city-flex .section-head h5{
+    color: var(--color-secondary-dark);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: var(--space-2);
+}
+.city-districs .city-flex .section-head h2{
+   color: var(--color-text);
+    font-weight: var(--font-size-4xl);
+    
+    letter-spacing: 2px;
+}
+.city-districs .city-flex .section-p{
+   color: var(--color-text);
+    max-width: 450px;
+}
+
+.district-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--space-6);
+}
+
+.district-grid .district-card:first-child {
+    grid-row: 1 / 3;
+    overflow: hidden;
+}
+/* .district-grid .district-card:nth-child(5) {
+    grid-column: span 2;
+} */
+
+
+.district-card-content a {
+    border: 1px solid var(--color-secondary-dark);
+    display: flex;
+    padding: var(--button-padding);
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    margin: var(--space-4) 0;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    color: var(--color-primary-dark);
+    cursor: pointer;
+}
+.district-card-content a:hover {
+   transform: translateX(2%);
+   transition: var(--transition-normal);
+}
+
+
+
+.district-grid .district-card {
+    background: var(--color-background);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    
+}
+.district-grid .district-card:hover {
+
+    transform: var(--transition-normal);
+}
+
+.district-card img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.district-card img:hover {
+    transform: translateY(-3%);
+    transition: var(--transition-normal);
+}
+
+.district-card .district-card-content {
+    
+    padding: var(--space-4);
+
+}
+.district-card .district-card-content .district-category{
+    color: var(--color-secondary-dark);
+    padding-bottom: var(--space-4);
+    
+
+}
+.district-card .district-card-content h3{
+    color: var(--color-primary-dark);
+    padding-bottom: var(--space-4);
+    
+
+}
+
+
+/* economics  engine section start here  */
+.economic-engine{
+    background: var(--color-primary-dark);
+    padding: var(--space-16);
+}
+.economic-engine .economic-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-6);
+}
+.economic-engine .economic-container .economic-title{
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+.economic-engine .economic-container .economic-title .eyebrow{
+    color: var(--color-secondary-dark);
+    text-transform: uppercase;
+    padding: var(--space-6) 0;
+}
+.economic-engine .economic-container .economic-title h2{
+    color: var(--color-white);
+    font-size: var(--font-size-4xl);
+    letter-spacing: 2px;
+    padding-bottom: var(--space-4);
+}
+.economic-engine .economic-container .economic-title p{
+    color: var(--color-background);
+    font-size: var(--font-size-sm);
+    line-height: 2;
+    
+    padding-bottom: var(--space-6);
+}
+.economic-engine .economic-container .economic-title a{
+    padding: var(--space-4) var(--space-8);
+    background: var(--color-secondary-dark);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    cursor: pointer;
+   
+    gap: var(--space-2);
+    transition: var(--transition-normal);
+    color: var(--color-border-light);
+}
+.economic-engine .economic-container .economic-title a:hover{
+    transform: translateX(2%);
+}
+.economic-engine .economic-container .main-business-details{
+    border: 1px solid var(--color-text-muted);
+     
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: var(--space-8);
+     
+   
+    
+    
+
+    
+    
+
+}
+.economic-engine .economic-container .flex-detail{
+     border-top: 1px solid var(--color-text-muted);
+     border-right: 1px solid var(--color-text-muted);
+     padding: var(--space-6);
+     
+}
+.economic-engine .economic-container .flex-detail .name{
+     display: flex;
+     gap: var(--space-2);
+     
+}
+.economic-engine .economic-container .flex-detail .name .icon{
+    color: var(--color-secondary-dark);
+    font-size: var(--font-size-2xl);
+     
+}
+.economic-engine .economic-container .flex-detail .name .detail{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-border);
+     
+}
+.economic-engine .economic-container .flex-detail .name .detail h4{
+    padding: var(--space-3) 0;
+     
+}
+.economic-engine .economic-container .flex-detail .name .detail p{
+    letter-spacing: 2px;
+    font-size: var(--font-size-xs);
+    line-height: 2;
+     
+}
+
+
+/* culture grid layout */
+.culture-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px, 1fr));
+    gap: var(--space-4);
+    
+    
+}
+/* .culture-grid .culture-card:first-child{
+    grid-column: span 2;
+    grid-row: span 2;
+    
+    
+} */
+ 
+.culture-grid .culture-card{
+  position: relative;
+  z-index: var(--z-header);
+    
+    
+}
+.culture-grid .culture-card .culture-card-content{
+  position: absolute;
+  top: 70%;
+  left: 2%;
+  bottom: 0;
+    
+    
+}
+ .culture-card-content h3{
+  color: var(--color-white);
+  padding-bottom: var(--space-3);
+    
+    
+}
+ .culture-card-content p{
+  color: var(--color-white);
+    
+    
+}
+ .culture-card-content .culture-category{
+  color: var(--color-gold-bright);
+  text-transform: uppercase;
+    
+    
+}
+.culture-grid .culture-card:nth-child(1){
+    grid-column: span 2;
+   
+      
+}
+
+
+.culture-grid .culture-card img {
+    width: 100%;
+   
+    object-fit: cover;
+    display: block;
+    filter: brightness(60%);
+}
 
 
    /* DIRECTORY */

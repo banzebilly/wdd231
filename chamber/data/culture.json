@@ -1,0 +1,37 @@
+[
+  {
+    "image": "images/constitution-hill.webp",
+    "alt": "Constitution Hill Johannesburg",
+    "category": "History & Democracy",
+    "title": "Constitution Hill",
+    "description": "A living museum telling the story of South Africa's journey to democracy."
+  },
+  {
+    "image": "images/apartheid-museum.webp",
+    "alt": "Apartheid Museum Johannesburg",
+    "category": "National History",
+    "title": "Apartheid Museum",
+    "description": "A powerful museum documenting South Africa's apartheid history and its journey toward democracy."
+  },
+  {
+    "image": "images/gold-reef-city.webp",
+    "alt": "Gold Reef City Johannesburg",
+    "category": "Mining Heritage",
+    "title": "Gold Reef City",
+    "description": "A popular heritage and entertainment destination built around Johannesburg's gold-mining history."
+  },
+  {
+    "image": "images/maboneng-precinct.webp",
+    "alt": "Maboneng Precinct Johannesburg",
+    "category": "Arts & Culture",
+    "title": "Maboneng Precinct",
+    "description": "A vibrant urban precinct known for art, design, restaurants, creative spaces and cultural experiences."
+  },
+  {
+    "image": "images/hector-pieterson-memorial.webp",
+    "alt": "Hector Pieterson Memorial Johannesburg",
+    "category": "Apartheid History",
+    "title": "Hector Pieterson Memorial",
+    "description": "A memorial and museum in Soweto commemorating the students who participated in the 1976 Soweto uprising."
+  }
+]

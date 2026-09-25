@@ -231,6 +231,62 @@
     }
 
 
+      /* last visit in the discover page */
+    .last-visit-section{
+        width: 100%;
+        padding: 0;
+    }   
+    .last-visit-section .visit{
+        padding: var(--space-4)
+    }
+
+      /* city statistics in the discover page */
+    .statistics{
+        width: 100%;
+        padding: 0;
+    }   
+    .statistics .city-flex {
+        padding: var(--space-4)
+    }
+
+    /* city districs section  */
+    .city-districs{
+        width: 100%;
+        padding: var(--space-6);
+    }
+    /* city districs section  */
+    .city-districs .city-flex{
+        width: 100%;
+        padding: var(--space-6);
+    }
+
+    .distric-grid{
+        width: 100%;
+        padding: var(--space-4);
+
+    }
+
+
+    .distric-grid .district-card-content{
+        width: 100%;
+        margin: var(--space-3) ;
+
+    }
+    .distric-grid .district-card-content a{
+        width: 100%;
+
+    }
+
+
+    
+/* economics  engine section start here  */
+    .economic-engine{
+       width: 100%;
+        padding: var(--space-6);
+    }
+
+
+
     /* directory styling */
     .directory {
         padding: var(--space-10);
@@ -601,6 +657,63 @@
         flex-direction: column;
     }
 
+
+     /* last visit in the discover page */
+    .last-visit-section{
+        width: 100%;
+        padding: 0;
+    }   
+    .last-visit-section .visit{
+        padding: var(--space-4)
+    }
+    
+      /* city statistics in the discover page */
+    .statistics{
+        width: 100%;
+        padding: 0;
+    }   
+    .statistics .city-flex {
+        padding: var(--space-4)
+    }
+    
+        /* city statistics in the discover page */
+    .statistics{
+        width: 100%;
+        padding: 0;
+    }   
+    .statistics .city-flex {
+        padding: var(--space-4)
+    }
+
+    /* city districs section  */
+    .city-districs{
+        width: 100%;
+        padding: 0;
+    }
+    /* city districs section  */
+    .city-districs .city-flex{
+        width: 100%;
+        padding: var(--space-6);
+    }
+
+    .distric-grid{
+        width: 100%;
+        padding: var(--space-4);
+
+    }
+  
+    
+    .distric-grid .district-card-content{
+        width: 100%;
+        margin: var(--space-3) ;
+
+    }
+    .distric-grid .district-card-content a{
+        width: 100%;
+
+    }
+
+
        /* directory styling */
     .directory {
         padding: var(--space-4);
@@ -643,7 +756,8 @@
 
     .membership-section { 
         padding-top: var(--space-12);
-         padding-bottom: var(--space-12); }
+         padding-bottom: var(--space-12);
+     }
     .membership-grid {
         grid-template-columns: 1fr; 
     } 
@@ -999,6 +1113,70 @@
         width: 100%;
         flex-direction: column;
     }
+
+
+    /* last visit in the discover page */
+    .last-visit-section{
+        width: 100%;
+        padding: 0;
+    }   
+    .last-visit-section .visit{
+        padding: var(--space-4)
+
+    
+}   
+      /* city statistics in the discover page */
+    .statistics{
+        width: 100%;
+        padding: 0;
+    }   
+    .statistics .city-flex {
+        width: 100%;
+        
+    }
+    .statistics .city-flex .section-p{
+        width: 100%;
+    }
+    
+    .statistics .statistics-grid{
+        width: 100%;
+    }
+    
+        /* city statistics in the discover page */
+    .statistics{
+        width: 100%;
+        padding: 0;
+    }   
+    .statistics .city-flex {
+        padding: var(--space-4)
+    }
+
+    /* city districs section  */
+    .city-districs{
+        width: 100%;
+        padding: 0;
+    }
+    /* city districs section  */
+    .city-districs .city-flex{
+        width: 100%;
+        padding: var(--space-6);
+    }
+
+    .distric-grid{
+        width: 100%;
+        padding: var(--space-4);
+
+    }
+    .distric-grid .district-card-content{
+        width: 100%;
+        margin: var(--space-3) ;
+
+    }
+    .distric-grid .district-card-content a{
+        width: 100%;
+
+    }
+
 
        /* directory styling */
     .derectory{

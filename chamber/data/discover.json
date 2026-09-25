@@ -1,0 +1,59 @@
+
+[
+  {
+    "name": "Sandton",
+    "location": "Sandton, Johannesburg",
+    "category": "Business District",
+    "description": "Africa's financial centre, defined by commerce, architecture and global ambition.",
+    "image": "images/sandton.webp"
+  },
+  {
+    "name": "Johannesburg CBD",
+    "location": "Johannesburg CBD, Johannesburg",
+    "category": "Urban Core",
+    "description": "Historic towers, civic landmarks and an energetic inner-city economy.",
+    "image": "images/johannesburg-cbd.webp"
+  },
+  {
+    "name": "Soweto",
+    "location": "Soweto, Johannesburg",
+    "category": "Heritage & Culture",
+    "description": "A place of remarkable history, enterprise and unmistakable cultural influence.",
+    "image": "images/soweto.webp"
+  },
+  {
+    "name": "Rosebank",
+    "location": "Rosebank, Johannesburg",
+    "category": "Commerce & Lifestyle",
+    "description": "A connected precinct where business, design, retail and hospitality meet.",
+    "image": "images/rosebank.webp"
+  },
+  {
+    "name": "Newtown",
+    "location": "Newtown, Johannesburg",
+    "category": "Creative District",
+    "description": "Museums, performance venues and the city's vibrant creative pulse.",
+    "image": "images/newtown.webp"
+  },
+  {
+    "name": "Maboneng",
+    "location": "Maboneng, Johannesburg",
+    "category": "Arts Precinct",
+    "description": "Independent studios, markets and urban reinvention on the eastern edge.",
+    "image": "images/maboneng.webp"
+  },
+  {
+    "name": "Melrose Arch",
+    "location": "Melrose Arch, Johannesburg",
+    "category": "Mixed-use Precinct",
+    "description": "A walkable destination for offices, dining, retail and city living.",
+    "image": "images/melrose-arch.webp"
+  },
+  {
+    "name": "Braamfontein",
+    "location": "Braamfontein, Johannesburg",
+    "category": "Education & Innovation",
+    "description": "A youthful neighbourhood powered by universities, culture and ideas.",
+    "image": "images/braamfontein.webp"
+  }
+]
