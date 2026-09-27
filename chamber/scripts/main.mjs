@@ -11,6 +11,7 @@ import { setupFooter } from "./footer.mjs";
 import { setupNavigation } from "./navigation.mjs";
 import { cityStatisticsFunction } from "./statistics.mjs";
 import { loadDistricts } from "./discover.mjs";
+import { loadPlaceAndCultures } from "./culture.mjs";
 
 
 loadEvents();
@@ -20,6 +21,7 @@ setupNavigation();
 getWeather();
 cityStatisticsFunction();
 loadDistricts();
+loadPlaceAndCultures();
 
 
 
