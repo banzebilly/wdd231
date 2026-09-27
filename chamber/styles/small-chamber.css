@@ -1,18 +1,39 @@
+/* 
 
-/* =========================================
+   RESPONSIVE DESIGN
+   Johannesburg Chamber Project
+  
    TABLET & SMALL LAPTOP
-   978px and below
-   ========================================= */
+   978px and below */
+
 
 @media screen and (max-width: 978px) {
 
-    /* ================================
-       HEADER
-       ================================ */
+    
+       /* THE GLOBAL */
+       
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+    }
+
+
+   
+       /*THE HEADER */
+      
 
     header {
         width: 100%;
-        padding: 0 1rem;
+        padding-inline: 1rem;
     }
 
     .logo-link {
@@ -32,31 +53,25 @@
         font-size: var(--font-size-sm);
     }
 
+    .navigation {
+        gap: 0.25rem;
+    }
+
     .navigation a {
-        font-size: 0.95rem;
-        padding: 8px;
-        margin-right: 0.5rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        margin: 0;
     }
 
 
-    /* ================================
-       MAIN
-       ================================ */
 
-    main {
-        width: 100%;
-        padding: 0;
-    }
-
-
-    /* ================================
-       HERO
-       ================================ */
+       /* HERO */
+       
 
     .hero {
         width: 100%;
         min-height: 450px;
-        padding: 2rem 0;
+        padding: 2rem 1rem;
     }
 
     .hero .info {
@@ -67,7 +82,7 @@
     }
 
     .hero .info h1 {
-        max-width: 600px;
+        max-width: 650px;
     }
 
     .hero .info p {
@@ -76,8 +91,10 @@
     }
 
     .info-btn {
+        display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
-        padding-top: 2rem;
+        padding-top: 1.5rem;
     }
 
     .info-btn a {
@@ -86,20 +103,20 @@
     }
 
 
-    /* ================================
-       ABOUT US
-       ================================ */
+   
+       /* ABOUT US */
+     
 
     .about-us {
         width: 100%;
-        padding: 0 1rem;
+        padding-inline: 1rem;
     }
 
     .about-us .who-we-re {
         width: 100%;
-        margin: 0;
         grid-template-columns: 1fr;
         gap: var(--space-8);
+        margin: 0;
     }
 
     .about-us .who-we-re .main-info {
@@ -114,38 +131,41 @@
 
     .about-us .who-we-re .main-image {
         width: 100%;
-        padding-top: 0;
+        padding: 0;
     }
 
     .about-us .who-we-re .main-image img {
         display: block;
         width: 100%;
-        height: auto;
-        max-height: 500px;
+        height: 500px;
         object-fit: cover;
-        padding-top: 0;
     }
 
 
-    /* ================================
-       ADVOCACY
-       ================================ */
+   
+       /* ADVOCACY */
+       
 
     .advocancy {
         width: 100%;
-        max-width: 700px;
+        max-width: 800px;
+        margin-inline: auto;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0 var(--space-4);
+        gap: var(--space-4);
+    }
+
+    .advocancy .adv {
+        width: 100%;
     }
 
 
-    /* ================================
-       ABOUT BUSINESS
-       ================================ */
+
+       /* ABOUT BUSINESS */
+    
 
     .about-busness {
         width: 100%;
-        padding: var(--space-12) var(--space-8);
+        padding: var(--space-12) var(--space-6);
     }
 
     .about-busness .data {
@@ -155,13 +175,14 @@
     }
 
     .about-busness .data .local-busness {
-        padding: var(--space-3) 1rem;
+        width: 100%;
+        padding: var(--space-4);
     }
 
 
-    /* ================================
-       WEATHER
-       ================================ */
+  
+       /* WEATHER */
+  
 
     .city-weather {
         width: 100%;
@@ -171,7 +192,7 @@
     .city-weather .container {
         width: 100%;
         grid-template-columns: 1fr;
-        gap: var(--space-4);
+        gap: var(--space-5);
     }
 
     .container .weather,
@@ -180,9 +201,9 @@
     }
 
 
-    /* ================================
-       MEMBERS
-       ================================ */
+ 
+       /* MEMBERS */
+   
 
     .members {
         width: 100%;
@@ -191,12 +212,11 @@
 
     .members .direction {
         width: 100%;
-        align-items: center;
         gap: var(--space-4);
     }
 
     .members .direction h2 {
-        max-width: 600px;
+        max-width: 650px;
     }
 
     .card-member {
@@ -210,105 +230,163 @@
     }
 
     .card img {
+        display: block;
         width: 100%;
-        height: 180px;
+        height: 200px;
         object-fit: cover;
     }
 
-    /* event stying */
-    .event-section{
+
+       /* EVENTS */
+     
+
+    .event-section {
         width: 100%;
-        padding: 0;
-    }
-    .event-section .event-container{
-        width: 100%;
-        
-       
-    }
-    .event-section .event-card{
-        width: 100%;
-        padding: var(--space-3);
+        padding-inline: 1rem;
     }
 
-
-      /* last visit in the discover page */
-    .last-visit-section{
+    .event-section .event-container {
         width: 100%;
-        padding: 0;
-    }   
-    .last-visit-section .visit{
-        padding: var(--space-4)
     }
 
-      /* city statistics in the discover page */
-    .statistics{
-        width: 100%;
-        padding: 0;
-    }   
-    .statistics .city-flex {
-        padding: var(--space-4)
-    }
-
-    /* city districs section  */
-    .city-districs{
-        width: 100%;
-        padding: var(--space-6);
-    }
-    /* city districs section  */
-    .city-districs .city-flex{
-        width: 100%;
-        padding: var(--space-6);
-    }
-
-    .distric-grid{
+    .event-section .event-card {
         width: 100%;
         padding: var(--space-4);
-
-    }
-
-
-    .distric-grid .district-card-content{
-        width: 100%;
-        margin: var(--space-3) ;
-
-    }
-    .distric-grid .district-card-content a{
-        width: 100%;
-
     }
 
 
     
-/* economics  engine section start here  */
-    .economic-engine{
-       width: 100%;
-        padding: var(--space-6);
+       /* LAST VISIT */
+      
+
+    .last-visit-section {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .last-visit-section .visit {
+        width: 100%;
+        padding: var(--space-5);
+    }
+
+
+       /* CITY STATISTICS */
+      
+
+    .statistics {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .statistics .city-flex {
+        width: 100%;
+        padding: var(--space-5);
+    }
+
+    .statistics-grid {
+        width: 100%;
+    }
+
+
+       /* CITY DISTRICTS */
+
+    .city-districs {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .city-districs .city-flex {
+        width: 100%;
+        padding: var(--space-5);
+    }
+
+    .district-grid {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-5);
+    }
+
+    .district-grid .district-card {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .district-grid .district-card img {
+        display: block;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* First district remain larger */
+    .district-grid .district-card:first-child {
+        grid-row: span 2;
+    }
+
+    .district-grid .district-card:first-child img {
+        height: 800px;
+    }
+
+    .district-grid .district-card-content {
+        width: 100%;
+        margin: 0;
+        padding: var(--space-4);
+    }
+
+    .district-grid .district-card-content a {
+        width: fit-content;
+    }
+
+
+   
+       /* ECONOMIC ENGINE */
+  
+
+    .economic-engine {
+        width: 100%;
+        padding: var(--space-8) 1rem;
     }
 
 
 
-    /* directory styling */
+       /* DIRECTORY */
+     
+
     .directory {
-        padding: var(--space-10);
+        width: 100%;
+        padding: var(--space-8) 1rem;
     }
 
     .directory .dir-info {
+        width: 100%;
         padding: var(--space-8) 1rem;
     }
 
     .directory .dir-info p {
-        max-width: 100%;
+        max-width: 700px;
     }
 
-    /* form section styling */
-    .form-section{
+
+       /* DIRECTORY FILTERS */
+  
+
+    .form-section {
         width: 100%;
+        padding-inline: 1rem;
     }
-    .form-section .directiory-filters{
+
+    .directory-filters,
+    .form-section .directory-filters {
+        width: 100%;
         grid-template-columns: 2fr 1fr;
-        
+        gap: var(--space-4);
     }
-     .search-box {
+
+    .search-box {
         grid-column: 1 / -1;
     }
 
@@ -316,57 +394,99 @@
         justify-self: end;
     }
 
+       /* MEMBERSHIP */
+   
 
-    .membership-section{
+    .membership-section {
         width: 100%;
-        padding: 0;
+        padding-inline: 1rem;
     }
 
+    .section-heading {
+        margin-inline: 0;
+    }
+
+    .membership-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-5);
+    }
+
+    .membership-card.featured {
+        grid-column: 1 / -1;
+    }
+
+
+  
+       /* APPLICATION */
    
-    .section-heading{
-        margin: var(--space-4);
+
+    .application-section {
+        width: 100%;
+        padding-inline: 1rem;
     }
 
     .application-wrapper {
+        width: 100%;
         grid-template-columns: 1fr;
         gap: var(--space-6);
-
         padding: var(--space-6);
     }
 
     .application-information {
+        width: 100%;
         padding: var(--space-6);
     }
 
-    /* footer */
-    footer{
+    .membership-form {
         width: 100%;
-        padding: var(--space-3) var(--space-2);
     }
 
-    footer .contact-info{
-        padding: var(--space-4);
 
+   
+       /* FOOTER */
+       
+
+    footer {
+        width: 100%;
+        padding: var(--space-5) 1rem;
+    }
+
+    footer .contact-info {
+        width: 100%;
+        padding: var(--space-4);
     }
 }
 
 
-/* =========================================
-   MOBILE
-   768px and below
-   ========================================= */
+
+
+   /* MOBILE
+   768px and below */
+
 
 @media screen and (max-width: 768px) {
 
-    /* ================================
-       HEADER
-       ================================ */
+       /* GLOBAL */
+    
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+       /* HEADER */
+     
 
     header {
         position: relative;
         width: 100%;
         min-height: var(--header-height);
-        padding: 0 1rem;
+        padding-inline: 1rem;
     }
 
     .logo-link {
@@ -387,9 +507,8 @@
     }
 
 
-    /* ================================
-       MOBILE MENU
-       ================================ */
+       /* MOBILE MENU */
+     
 
     #menu {
         display: flex;
@@ -400,11 +519,13 @@
         height: 44px;
 
         padding: 0;
-        background: transparent;
+        margin-left: auto;
+
         border: none;
+        background: transparent;
 
         color: var(--color-primary-dark);
-        font-size: 2rem;
+        font-size: 1.8rem;
 
         cursor: pointer;
     }
@@ -414,26 +535,27 @@
     }
 
     .navigation.open {
-        display: flex;
-        flex-direction: column;
-
         position: absolute;
         top: 100%;
         left: 0;
 
+        display: flex;
+        flex-direction: column;
+
         width: 100%;
+        margin: 0;
+        padding: 0;
 
         background: var(--color-white);
         box-shadow: var(--shadow-md);
-
-        margin: 0;
-        padding: 0;
 
         z-index: var(--z-menu);
     }
 
     .navigation a {
+        display: block;
         width: 100%;
+
         padding: 1rem;
 
         margin: 0;
@@ -446,18 +568,18 @@
     }
 
     .navigation a:last-child {
-        border-radius: 0;
+        border-bottom: none;
     }
 
 
-    /* ================================
-       HERO
-       ================================ */
+  
+       /* HERO */
+      
 
     .hero {
         width: 100%;
         min-height: 450px;
-        padding: 1rem 0;
+        padding: 1rem;
     }
 
     .hero .info {
@@ -466,40 +588,47 @@
     }
 
     .hero .info h1 {
+        max-width: 100%;
         font-size: var(--font-size-3xl);
-        letter-spacing: 1px;
+        line-height: 1.1;
+        letter-spacing: 0.5px;
     }
 
     .hero .info p {
         width: 100%;
+        max-width: 100%;
         font-size: var(--font-size-base);
-        letter-spacing: 1px;
+        line-height: 1.6;
+        letter-spacing: 0;
     }
 
     .info-btn {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         gap: 0.7rem;
         padding-top: 1.5rem;
     }
 
     .info-btn a {
-        padding: 0.7rem 0.8rem;
+        flex: 1 1 180px;
+        text-align: center;
+        padding: 0.75rem 0.8rem;
         font-size: 0.85rem;
     }
 
 
-    /* ================================
-       ABOUT US
-       ================================ */
+  
+       /* ABOUT US */
+      
 
     .about-us {
         width: 100%;
-        padding: 0 0.8rem;
+        padding-inline: 1rem;
     }
 
     .about-us .who-we-re {
         width: 100%;
-        margin: 0;
         grid-template-columns: 1fr;
         gap: var(--space-6);
     }
@@ -517,25 +646,25 @@
         width: 100%;
         max-width: 100%;
         font-size: var(--font-size-base);
+        line-height: 1.7;
     }
 
     .about-us .who-we-re .main-image {
         width: 100%;
-        padding-top: 0;
+        padding: 0;
     }
 
     .about-us .who-we-re .main-image img {
         display: block;
         width: 100%;
-        height: auto;
-        max-height: 450px;
+        height: 450px;
         object-fit: cover;
     }
 
 
-    /* ================================
-       ADVOCACY
-       ================================ */
+   
+       /* ADVOCACY */
+   
 
     .advocancy {
         width: 100%;
@@ -549,9 +678,8 @@
     }
 
 
-    /* ================================
-       ABOUT BUSINESS
-       ================================ */
+       /* ABOUT BUSINESS */
+    
 
     .about-busness {
         width: 100%;
@@ -560,22 +688,23 @@
 
     .about-busness .data {
         width: 100%;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: var(--space-4);
     }
 
     .about-busness .data .local-busness {
         width: 100%;
+        padding: var(--space-4);
     }
 
 
-    /* ================================
-       WEATHER
-       ================================ */
+  
+       /* WEATHER */
+  
 
     .city-weather {
         width: 100%;
-        padding: var(--space-10) 1.2rem;
+        padding: var(--space-10) 1rem;
     }
 
     .city-weather h2 {
@@ -591,6 +720,7 @@
     .container .weather,
     .container .meter {
         width: 100%;
+        min-width: 0;
     }
 
     .container .weather .CBD {
@@ -602,13 +732,13 @@
     }
 
 
-    /* ================================
-       MEMBERS
-       ================================ */
+   
+       /* MEMBERS */
+     
 
     .members {
         width: 100%;
-        padding: var(--space-10) 1.2rem;
+        padding: var(--space-10) 1rem;
     }
 
     .members .direction {
@@ -618,7 +748,11 @@
         gap: var(--space-2);
     }
 
-    .members .direction h2,
+    .members .direction h2 {
+        max-width: 100%;
+        padding-bottom: var(--space-3);
+    }
+
     .members .direction a {
         padding-bottom: var(--space-3);
     }
@@ -634,158 +768,258 @@
     }
 
     .card img {
+        display: block;
         width: 100%;
-        height: 200px;
+        height: 220px;
         object-fit: cover;
     }
 
-    /* event style  */
-      /* event stying */
-    .event-section{
+
+       /* EVENTS */
+      
+
+    .event-section {
         width: 100%;
-        padding: 0;
+        padding: var(--space-6) 1rem;
     }
-    .event-section .event-container{
+
+    .event-section .event-container {
         width: 100%;
         grid-template-columns: 1fr;
-        padding-inline: 0 var(--space-3);
-        
-       
+        gap: var(--space-4);
+        padding: 0;
     }
-    .event-section .event-card{
+
+    .event-section .event-card {
         width: 100%;
         flex-direction: column;
+        padding: var(--space-4);
     }
 
 
-     /* last visit in the discover page */
-    .last-visit-section{
-        width: 100%;
-        padding: 0;
-    }   
-    .last-visit-section .visit{
-        padding: var(--space-4)
-    }
+       /* LAST VISIT */
     
-      /* city statistics in the discover page */
-    .statistics{
+
+    .last-visit-section {
         width: 100%;
-        padding: 0;
-    }   
-    .statistics .city-flex {
-        padding: var(--space-4)
-    }
-    
-        /* city statistics in the discover page */
-    .statistics{
-        width: 100%;
-        padding: 0;
-    }   
-    .statistics .city-flex {
-        padding: var(--space-4)
+        padding: 0 1rem;
     }
 
-    /* city districs section  */
-    .city-districs{
-        width: 100%;
-        padding: 0;
-    }
-    /* city districs section  */
-    .city-districs .city-flex{
-        width: 100%;
-        padding: var(--space-6);
-    }
-
-    .distric-grid{
+    .last-visit-section .visit {
         width: 100%;
         padding: var(--space-4);
-
     }
-  
-    
-    .distric-grid .district-card-content{
+
+
+       /* CITY STATISTICS */
+       
+
+    .statistics {
         width: 100%;
-        margin: var(--space-3) ;
-
+        padding: 0 1rem;
     }
-    .distric-grid .district-card-content a{
+
+    .statistics .city-flex {
         width: 100%;
+        padding: var(--space-5);
+    }
 
+    .statistics .section-p {
+        width: 100%;
+    }
+
+    .statistics-grid {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-4);
     }
 
 
-       /* directory styling */
+       /* CITY DISTRICTS */
+       
+
+    .city-districs {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .city-districs .city-flex {
+        width: 100%;
+        padding: var(--space-5);
+    }
+
+    .district-grid {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .district-grid .district-card {
+        width: 100%;
+    }
+
+    .district-grid .district-card:first-child {
+        grid-row: auto;
+    }
+
+    .district-grid .district-card img,
+    .district-grid .district-card:first-child img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .district-grid .district-card-content {
+        width: 100%;
+        margin: 0;
+        padding: var(--space-4);
+    }
+
+    .district-grid .district-card-content a {
+        display: inline-flex;
+        width: fit-content;
+    }
+
+
+       /* ECONOMIC ENGINE */
+       
+
+    .economic-engine {
+        width: 100%;
+        padding: var(--space-8) 1rem;
+    }
+
+
+       /* DIRECTORY */
+
+
     .directory {
-        padding: var(--space-4);
+        width: 100%;
+        padding: var(--space-6) 1rem;
     }
 
     .directory .dir-info {
+        width: 100%;
         padding: var(--space-6) 0.5rem;
     }
 
     .directory .dir-info h1 {
         font-size: clamp(1.8rem, 8vw, 2.5rem);
+        line-height: 1.1;
         letter-spacing: 0.5px;
     }
 
     .directory .dir-info p {
-        font-size: 0.9rem;
-        letter-spacing: 0.5px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.95rem;
         line-height: 1.6;
+        letter-spacing: 0;
     }
 
-    /* form section styling */
-    .form-section{
+
+       /* DIRECTORY FILTERS */
+      
+
+    .form-section {
         width: 100%;
+        padding-inline: 1rem;
     }
-     .directory-filters {
+
+    .directory-filters,
+    .form-section .directory-filters {
+        width: 100%;
         grid-template-columns: 1fr;
+        gap: var(--space-4);
     }
+
     .search-box,
     .view-controls {
         grid-column: auto;
     }
 
     .view-controls {
+        width: 100%;
         justify-self: stretch;
         justify-content: flex-end;
     }
+
+
     
+       /* MEMBERSHIP */
+       
 
+    .membership-section {
+        width: 100%;
+        padding: var(--space-12) 1rem;
+    }
 
-
-    .membership-section { 
-        padding-top: var(--space-12);
-         padding-bottom: var(--space-12);
-     }
     .membership-grid {
-        grid-template-columns: 1fr; 
-    } 
-    .membership-card.featured { 
-        grid-column: auto; width: auto; 
-    } 
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .membership-card.featured {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .membership-section .section-heading {
+        margin-bottom: var(--space-8);
+    }
+
     .membership-section .section-heading h2 {
-         font-size: var(--font-size-2xl);
+        font-size: var(--font-size-2xl);
+    }
+
+    .membership-card {
+        width: 100%;
+    }
+
+    .membership-description {
+        min-height: auto;
     }
 
 
+  
+       /* APPLICATION */
+   
+
     .application-section {
-        padding-top: var(--space-12);
-        padding-bottom: var(--space-12);
+        width: 100%;
+        padding: var(--space-12) 1rem;
+    }
+
+    .application-section .section-heading {
+        margin-bottom: var(--space-8);
     }
 
     .application-section .section-heading h2 {
         font-size: var(--font-size-2xl);
     }
 
-    .membership-form {
+    .application-wrapper {
+        width: 100%;
         grid-template-columns: 1fr;
+        padding: var(--space-5);
     }
 
-    .form-group.full-width {
-        grid-column: auto;
+    .application-information {
+        width: 100%;
+        padding: var(--space-5);
     }
 
+    .membership-form {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .form-group.full-width,
     .form-checkbox {
         grid-column: auto;
     }
@@ -795,41 +1029,47 @@
         width: 100%;
     }
 
-    
 
-    footer .contact-info{
-        justify-content: center;
+  
+       /* FOOTER */
+       
+
+    footer {
+        width: 100%;
+        padding: var(--space-5) 1rem;
+    }
+
+    footer .contact-info {
+        width: 100%;
         justify-content: center;
         flex-direction: column;
-        padding: var(--space-3) 0; 
-        margin: 0 var(--space-3) ;
+        gap: var(--space-3);
+        padding: var(--space-4) 0;
+        margin: 0;
+        text-align: center;
     }
 }
 
 
-/* =========================================
-   SMALL PHONES
-   478px and below
-   ========================================= */
+
+
+   /* SMALL PHONES
+   478px and below */
+
 
 @media screen and (max-width: 478px) {
 
-    /* ================================
-       HEADER
-       ================================ */
+    
+       /* HEADER */
+       
 
     header {
         width: 100%;
-        padding: 0;
-    }
-
-    .logo-link {
-        padding: 0;
+        padding-inline: 0.75rem;
     }
 
     .logo-link img {
         width: 55px;
-        height: auto;
     }
 
     .j-container h4 {
@@ -843,77 +1083,69 @@
     #menu {
         width: 44px;
         height: 44px;
-        padding-right: 1rem;
-    }
-
-
-    /* ================================
-       MOBILE NAVIGATION
-       ================================ */
-
-    .navigation.open {
-        width: 100%;
+        font-size: 1.6rem;
     }
 
     .navigation a {
-        padding: 0.9rem;
+        padding: 0.9rem 1rem;
         font-size: 0.95rem;
     }
 
 
-    /* ================================
-       HERO
-       ================================ */
+       /* HERO */
+      
 
     .hero {
         width: 100%;
         min-height: 400px;
-        padding: 1rem 0;
+        padding: 0.75rem;
         background-position: center;
     }
 
     .hero .info {
         width: 100%;
-        padding: 1.5rem 1.2rem;
+        padding: 1.5rem 1rem;
         gap: 1rem;
     }
 
     .hero .info h1 {
         font-size: var(--font-size-2xl);
-        letter-spacing: 0.5px;
+        line-height: 1.15;
+        letter-spacing: 0;
     }
 
     .hero .info p {
         font-size: var(--font-size-sm);
-        letter-spacing: 0.5px;
+        line-height: 1.6;
     }
 
     .info-btn {
         width: 100%;
-        gap: 0.5rem;
+        flex-direction: column;
+        gap: 0.6rem;
     }
 
     .info-btn a {
-        flex: 1;
+        width: 100%;
+        flex: none;
         text-align: center;
-        padding: 0.65rem 0.6rem;
-        font-size: 0.75rem;
+        padding: 0.7rem;
+        font-size: 0.8rem;
     }
 
 
-    /* ================================
-       ABOUT US
-       ================================ */
+       /* ABOUT US */
+    
 
     .about-us {
         width: 100%;
-        padding: 0;
+        padding: 0 0.75rem;
     }
 
     .about-us .who-we-re {
         width: 100%;
-        margin: 0;
         grid-template-columns: 1fr;
+        gap: var(--space-5);
     }
 
     .about-us .who-we-re .main-info {
@@ -927,43 +1159,43 @@
 
     .about-us .who-we-re .main-info h2 {
         font-size: var(--font-size-2xl);
+        line-height: 1.15;
     }
 
     .about-us .who-we-re .main-info p {
         font-size: var(--font-size-sm);
-        line-height: 1.6;
+        line-height: 1.65;
     }
 
     .about-us .who-we-re .main-image {
         width: 100%;
-        padding: 0;
     }
 
     .about-us .who-we-re .main-image img {
         width: 100%;
-        height: auto;
-        max-height: 350px;
+        height: 350px;
+        object-fit: cover;
     }
 
 
-    /* ================================
-       ADVOCACY
-       ================================ */
+       /* ADVOCACY */
+      
 
     .advocancy {
         width: 100%;
         grid-template-columns: 1fr;
-        padding-top: var(--space-3);
+        gap: 0;
     }
 
     .advocancy .adv {
+        width: 100%;
         padding: 0.7rem 0;
     }
 
 
-    /* ================================
-       ABOUT BUSINESS
-       ================================ */
+   
+       /* ABOUT BUSINESS */
+       
 
     .about-busness {
         width: 100%;
@@ -973,26 +1205,26 @@
     .about-busness .data {
         width: 100%;
         grid-template-columns: 1fr 1fr;
-        gap: var(--space-4);
+        gap: var(--space-3);
     }
 
     .about-busness .data .local-busness {
         width: 100%;
-        padding: var(--space-2) 0.8rem;
+        padding: var(--space-3) 0.7rem;
     }
 
 
-    /* ================================
-       WEATHER
-       ================================ */
+    
+       /* WEATHER */
+       
 
     .city-weather {
         width: 100%;
-        padding: var(--space-8) 1rem;
+        padding: var(--space-8) 0.75rem;
     }
 
     .city-weather h4 {
-        padding-top: var(--space-4);
+        padding-top: var(--space-3);
     }
 
     .city-weather h2 {
@@ -1009,6 +1241,7 @@
     .container .meter {
         width: 100%;
         margin: 0;
+        min-width: 0;
     }
 
     .container .weather .CBD {
@@ -1016,9 +1249,10 @@
     }
 
     .wind {
+        width: 100%;
         flex-direction: row;
-        gap: var(--space-4);
-        padding: var(--space-4) 1rem;
+        gap: var(--space-3);
+        padding: var(--space-4) 0.8rem;
     }
 
     .container .meter {
@@ -1026,18 +1260,19 @@
     }
 
     .container .meter .days {
+        display: flex;
         gap: var(--space-2);
         overflow-x: auto;
+        scrollbar-width: thin;
     }
 
 
-    /* ================================
-       MEMBERS
-       ================================ */
+       /* MEMBERS */
+  
 
     .members {
         width: 100%;
-        padding: var(--space-8) 1rem;
+        padding: var(--space-8) 0.75rem;
     }
 
     .members > h4 {
@@ -1052,13 +1287,13 @@
     }
 
     .members .direction h2 {
+        width: 100%;
         font-size: var(--font-size-xl);
-        padding-bottom: var(--space-2);
+        line-height: 1.2;
     }
 
     .members .direction a {
         font-size: var(--font-size-sm);
-        padding-bottom: var(--space-4);
     }
 
     .card-member {
@@ -1082,6 +1317,8 @@
     }
 
     .member-info .btn-m {
+        display: flex;
+        flex-wrap: wrap;
         gap: var(--space-2);
         margin-bottom: var(--space-3);
     }
@@ -1092,147 +1329,258 @@
 
     .member-info p {
         font-size: var(--font-size-sm);
-        line-height: 1.5;
+        line-height: 1.55;
     }
 
-    /* event style  */
-      /* event stying */
-    .event-section{
+
+       /* EVENTS */
+       
+
+    .event-section {
         width: 100%;
-        padding: var(--space-6);
+        padding: var(--space-6) 0.75rem;
     }
 
-    .event-section .event-container{
+    .event-section .event-container {
         width: 100%;
         grid-template-columns: 1fr;
-        padding-inline: 0 var(--space-3);
-        
-       
+        gap: var(--space-4);
+        padding: 0;
     }
-    .event-section .event-card{
+
+    .event-section .event-card {
         width: 100%;
         flex-direction: column;
+        padding: var(--space-4);
     }
 
 
-    /* last visit in the discover page */
-    .last-visit-section{
-        width: 100%;
-        padding: 0;
-    }   
-    .last-visit-section .visit{
-        padding: var(--space-4)
-
+   
+       /* LAST VISIT */
     
-}   
-      /* city statistics in the discover page */
-    .statistics{
+
+    .last-visit-section {
         width: 100%;
-        padding: 0;
-    }   
-    .statistics .city-flex {
-        width: 100%;
-        
-    }
-    .statistics .city-flex .section-p{
-        width: 100%;
-    }
-    
-    .statistics .statistics-grid{
-        width: 100%;
-    }
-    
-        /* city statistics in the discover page */
-    .statistics{
-        width: 100%;
-        padding: 0;
-    }   
-    .statistics .city-flex {
-        padding: var(--space-4)
+        padding-inline: 0.75rem;
     }
 
-    /* city districs section  */
-    .city-districs{
-        width: 100%;
-        padding: 0;
-    }
-    /* city districs section  */
-    .city-districs .city-flex{
-        width: 100%;
-        padding: var(--space-6);
-    }
-
-    .distric-grid{
+    .last-visit-section .visit {
         width: 100%;
         padding: var(--space-4);
-
     }
-    .distric-grid .district-card-content{
+
+
+   
+       /* CITY STATISTICS */
+  
+
+    .statistics {
         width: 100%;
-        margin: var(--space-3) ;
-
+        padding-inline: 0.75rem;
     }
-    .distric-grid .district-card-content a{
+
+    .statistics .city-flex {
         width: 100%;
-
+        padding: var(--space-4);
     }
 
-
-       /* directory styling */
-    .derectory{
-        width: 100%;
-        padding: 0;
-        
-    }
-    .derectory .dir-info{
-        padding:var(--space-4);
-        gap: var(--space-4);
-    }
-    .derectory .dir-info p{
+    .statistics .section-p {
         width: 100%;
     }
 
-    /* form section styling */
-    .form-section{
+    .statistics-grid {
         width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3);
     }
-    .form-section .directiory-filters{
+
+    .statistics-grid .stat-card {
+        min-width: 0;
+        padding: var(--space-3);
+    }
+
+
+       /* CITY DISTRICTS */
+   
+
+    .city-districs {
+        width: 100%;
+        padding-inline: 0.75rem;
+    }
+
+    .city-districs .city-flex {
+        width: 100%;
+        padding: var(--space-4);
+    }
+
+    .district-grid {
         width: 100%;
         grid-template-columns: 1fr;
-        
+        gap: var(--space-4);
+        margin: 0;
+        padding: 0;
     }
+
+    .district-grid .district-card {
+        width: 100%;
+    }
+
+    .district-grid .district-card:first-child {
+        grid-row: auto;
+    }
+
+    .district-grid .district-card img,
+    .district-grid .district-card:first-child img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .district-grid .district-card-content {
+        width: 100%;
+        margin: 0;
+        padding: var(--space-4);
+    }
+
+    .district-grid .district-card-content h3 {
+        font-size: var(--font-size-xl);
+    }
+
+    .district-grid .district-card-content p {
+        font-size: var(--font-size-sm);
+        line-height: 1.6;
+
+    }
+    /* ECONOMIC ENGINE */
+       
+
+    .economic-engine {
+        width: 100%;
+        padding: var(--space-8) 0.75rem;
+    }
+
+
+    
+       /* DIRECTORY */
+
+
+    .directory {
+        width: 100%;
+        padding: var(--space-5) 0.75rem;
+    }
+
+    .directory .dir-info {
+        width: 100%;
+        padding: var(--space-5) 0.5rem;
+    }
+
+    .directory .dir-info h1 {
+        font-size: clamp(1.8rem, 9vw, 2.4rem);
+        line-height: 1.1;
+    }
+
+    .directory .dir-info p {
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+
+
+       /* DIRECTORY FILTERS */
+       
+
+    .form-section {
+        width: 100%;
+        padding-inline: 0.75rem;
+    }
+
+    .directory-filters,
+    .form-section .directory-filters {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+
+    .search-box,
+    .view-controls {
+        width: 100%;
+        grid-column: auto;
+    }
+
+    .view-controls {
+        justify-content: center;
+    }
+
+
+       /* MEMBERSHIP */
+      
 
     .membership-section {
-         padding: var(--space-10) var(--space-4); 
-        } 
-    .membership-section .section-heading { margin-bottom: var(--space-8);
-     } 
-    .membership-section .section-heading h2 { font-size: var(--font-size-xl); 
-    } 
-    .membership-card { padding: var(--space-6);
-     } 
-     .membership-card h3 { font-size: var(--font-size-xl); 
+        width: 100%;
+        padding: var(--space-10) 0.75rem;
     }
-     .membership-description { min-height: auto; 
-    } 
-    .membership-price { font-size: var(--font-size-3xl); 
-    } 
-    .benefits { gap: var(--space-3); 
-    } 
-    .benefits li { font-size: var(--font-size-sm); 
-    } 
-    .popular { right: var(--space-4); }
+
+    .membership-section .section-heading {
+        margin-bottom: var(--space-6);
+    }
+
+    .membership-section .section-heading h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .membership-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .membership-card {
+        width: 100%;
+        padding: var(--space-5);
+    }
+
+    .membership-card.featured {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .membership-card h3 {
+        font-size: var(--font-size-xl);
+    }
+
+    .membership-description {
+        min-height: auto;
+    }
+
+    .membership-price {
+        font-size: var(--font-size-3xl);
+    }
+
+    .benefits {
+        gap: var(--space-3);
+    }
+
+    .benefits li {
+        font-size: var(--font-size-sm);
+    }
+
+    .popular {
+        right: var(--space-4);
+    }
+
+
     
+       /* APPLICATION */
+      
 
-
-
-/* apliclation  */
     .application-section {
-        padding: var(--space-10) var(--space-4);
+        width: 100%;
+        padding: var(--space-10) 0.75rem;
     }
 
     .application-section .section-heading {
-        margin-bottom: var(--space-8);
+        margin-bottom: var(--space-6);
     }
 
     .application-section .section-heading h2 {
@@ -1240,12 +1588,13 @@
     }
 
     .application-wrapper {
+        width: 100%;
         padding: var(--space-4);
-
         border-radius: var(--radius-md);
     }
 
     .application-information {
+        width: 100%;
         padding: var(--space-5);
     }
 
@@ -1254,8 +1603,38 @@
     }
 
     .membership-form {
+        width: 100%;
+        grid-template-columns: 1fr;
         gap: var(--space-4);
     }
 
+    .form-group.full-width,
+    .form-checkbox {
+        grid-column: auto;
+    }
+
+    .membership-form .primary-button {
+        width: 100%;
+        grid-column: auto;
+    }
+
+       /* FOOTER */
+   
+
+    footer {
+        width: 100%;
+        padding: var(--space-5) 0.75rem;
+    }
+
+    footer .contact-info {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: var(--space-3);
+        padding: var(--space-3) 0;
+        margin: 0;
+        text-align: center;
+    }
 }
 

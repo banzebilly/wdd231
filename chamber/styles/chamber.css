@@ -1010,10 +1010,7 @@ nav a.active {
     gap: var(--space-6);
 }
 
-.district-grid .district-card:first-child {
-    grid-row: 1 / 3;
-    overflow: hidden;
-}
+
 /* .district-grid .district-card:nth-child(5) {
     grid-column: span 2;
 } */
@@ -1051,11 +1048,18 @@ nav a.active {
     transform: var(--transition-normal);
 }
 
-.district-card img {
+.district-grid .district-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* .district-grid .district-card:first-child img {
+    height: 800px;
     width: 100%;
     object-fit: cover;
-    display: block;
-}
+} */
+
 .district-card img:hover {
     transform: translateY(-3%);
     transition: var(--transition-normal);

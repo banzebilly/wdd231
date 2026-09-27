@@ -9,6 +9,8 @@ import { loadEvents } from "./events.mjs";
 import { loadShortMember } from "./short-member.mjs";
 import { setupFooter } from "./footer.mjs";
 import { setupNavigation } from "./navigation.mjs";
+import { cityStatisticsFunction } from "./statistics.mjs";
+import { loadDistricts } from "./discover.mjs";
 
 
 loadEvents();
@@ -16,6 +18,8 @@ loadShortMember();
 setupFooter();
 setupNavigation();
 getWeather();
+cityStatisticsFunction();
+loadDistricts();
 
 
 
