@@ -1011,9 +1011,17 @@ nav a.active {
 }
 
 
-/* .district-grid .district-card:nth-child(5) {
-    grid-column: span 2;
-} */
+.district-grid .district-card:nth-child(1) {
+    grid-row: span 2;
+   
+    
+} 
+
+.district-grid .district-card:nth-child(1) img {
+    height: 82%;
+    min-height: 500px;
+    object-fit: cover;
+}
 
 
 .district-card-content a {

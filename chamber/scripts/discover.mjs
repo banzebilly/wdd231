@@ -38,6 +38,8 @@ const displayDistricts = (districts) => {
                 alt="${district.location}"
                 width="400"
                 height="270"
+                                    
+
                 loading="lazy"
             >
 
