@@ -13,7 +13,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 
 }, {
-    threshold: 0.20
+    threshold: 0.20 
 });
 
 revealElements.forEach(element => {

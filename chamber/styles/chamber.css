@@ -1,24 +1,22 @@
 :root {
 
   
-       /*THe BRAND COLORS */
-   
+    /*THe BRAND COLORS */
+    --color-secondary: #8A5A00;
+    --color-secondary-dark: #6B4500;
+    --color-secondary-light: #9C6700;
+    --color-gold-bright: #F7D36A;
+
 
     --color-primary: #092B58;
     --color-primary-dark: #061D40;
     --color-primary-light: #123B72;
 
-    --color-secondary: #C28B19;
-    --color-secondary-dark: #A66F08;
-    --color-secondary-light: #D9A52E;
-    --color-gold-bright: #F7D36A;
-
-
-   
+    
        /*The NEUTRAL COLORS */
     
 
-    --color-white: #f6f1f1;
+    --color-white: #FFFFFF;
     --color-background: #fffffc;
     --color-background-light: #F6F2F2;
     --color-background-dark: #f2f0eb;
@@ -28,7 +26,7 @@
 
     --color-text: #17212B;
     --color-text-light: #53606D;
-    --color-text-muted: #747E87;
+    --color-text-muted: #5F6872;
 
     --color-border: #D9DCE0;
     --color-border-light: #E8E9EB;
@@ -916,13 +914,14 @@ nav a.active {
     letter-spacing: 2px;
     padding-bottom: var(--space-2);
 }
-.city-statistics .city-flex .section-head h2{
+
+.city-statistics .city-flex .section-head h2 {
     color: var(--color-text);
-    font-weight: var(--font-size-4xl);
-    
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-4xl);
     letter-spacing: 2px;
-    
 }
+
 .city-statistics .city-flex .section-p p{
     color: var(--color-text);
     max-width: 450px;
@@ -1022,11 +1021,13 @@ nav a.active {
 }
 
 
+
 .district-grid .district-card:nth-child(1) {
     grid-row: span 2;
    
     
 } 
+
 
 .district-grid .district-card:nth-child(1) img {
     height: 82%;
@@ -1060,19 +1061,26 @@ nav a.active {
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
+    transition: var(--transition-normal);
     
 }
-.district-grid .district-card:hover {
 
-    transform: var(--transition-normal);
+
+.district-grid .district-card:hover {
+    transform: translateY(-3%);
 }
 
-.district-grid .district-card img {
+
+.district-card img {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    display: block;
+    transition: transform var(--transition-normal);
 }
-
+.district-card:hover img {
+    transform: scale(1.04);
+}
 /* .district-grid .district-card:first-child img {
     height: 800px;
     width: 100%;
