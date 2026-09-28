@@ -871,6 +871,9 @@
         height: 400px;
         object-fit: cover;
     }
+    .district-card:hover img {
+        transform: scale(1.04);
+    }
 
     .district-grid .district-card-content {
         width: 100%;

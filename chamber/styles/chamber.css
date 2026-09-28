@@ -272,9 +272,9 @@ header {
 
 .navigation a:last-child {
     padding: var(--button-padding);
-    background: var(--color-secondary-light);
+    background: var(--color-secondary);
     line-height: var(--line-height-tight);
-    color: var(--color-primary-dark);
+    color: var(--color-white);
     border-radius: var(--radius-md);
 }
 
@@ -320,7 +320,10 @@ nav a.active {
 
 
 .hero {
-    background-image: url("../images/joburg2.webp");
+    position: relative;
+    background-image:
+        linear-gradient(rgba(6, 29, 64, 0.65), rgba(6, 29, 64, 0.65)),
+        url("../images/joburg2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -365,9 +368,9 @@ nav a.active {
 
 .info-btn a {
     padding: var(--button-padding);
-    background: var(--color-secondary-light);
+    background: var(--color-secondary);
     line-height: var(--line-height-tight);
-    color: var(--color-primary-dark);
+    color: var(--color-white);
     border-radius: var(--radius-md);
     cursor: pointer;
     text-decoration: none;
@@ -1003,12 +1006,14 @@ nav a.active {
     letter-spacing: 2px;
     padding-bottom: var(--space-2);
 }
-.city-districs .city-flex .section-head h2{
-   color: var(--color-text);
-    font-weight: var(--font-size-4xl);
-    
+
+.city-districs .city-flex .section-head h2 {
+    color: var(--color-text);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-4xl);
     letter-spacing: 2px;
 }
+
 .city-districs .city-flex .section-p{
    color: var(--color-text);
     max-width: 450px;
@@ -1078,6 +1083,7 @@ nav a.active {
     display: block;
     transition: transform var(--transition-normal);
 }
+
 .district-card:hover img {
     transform: scale(1.04);
 }
@@ -1087,10 +1093,6 @@ nav a.active {
     object-fit: cover;
 } */
 
-.district-card img:hover {
-    transform: translateY(-3%);
-    transition: var(--transition-normal);
-}
 
 .district-card .district-card-content {
     
@@ -1128,8 +1130,8 @@ nav a.active {
   flex-direction: column;
   
 }
-.economic-engine .economic-container .economic-title .eyebrow{
-    color: var(--color-secondary-dark);
+.economic-engine .economic-container .economic-title .eyebrow {
+    color: var(--color-gold-bright);
     text-transform: uppercase;
     padding: var(--space-6) 0;
 }
@@ -1217,13 +1219,7 @@ nav a.active {
     
     
 }
-/* .culture-grid .culture-card:first-child{
-    grid-column: span 2;
-    grid-row: span 2;
-    
-    
-} */
- 
+
 .culture-grid .culture-card{
   position: relative;
   z-index: var(--z-header);
