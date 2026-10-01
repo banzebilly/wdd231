@@ -254,103 +254,102 @@
         padding: var(--space-4);
     }
 
-
-    
-       /* LAST VISIT */
-      
-
-    .last-visit-section {
-        width: 100%;
-        padding-inline: 1rem;
-    }
-
+    * Last visit */
     .last-visit-section .visit {
-        width: 100%;
-        padding: var(--space-5);
+        padding: var(--space-10);
+    }
+
+    .last-visit-section .visit .grid-visit-card {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
 
-       /* CITY STATISTICS */
-      
-
-    .statistics {
-        width: 100%;
-        padding-inline: 1rem;
+    /* City statistics */
+    .city-statistics {
+        padding: var(--space-10);
     }
 
-    .statistics .city-flex {
-        width: 100%;
-        padding: var(--space-5);
+    .city-statistics .city-flex {
+        align-items: flex-start;
     }
 
-    .statistics-grid {
-        width: 100%;
+    .city-statistics .city-flex .section-head h2 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .city-statistics .statistics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .city-statistics .statistics-grid .stat-card {
+        padding: var(--space-8);
+    }
+
+    .city-statistics .statistics-grid .stat-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .city-statistics .statistics-grid .stat-card:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--color-border);
     }
 
 
-       /* CITY DISTRICTS */
-
+    /* City districts */
     .city-districs {
-        width: 100%;
-        padding-inline: 1rem;
+        padding: var(--space-10);
     }
 
-    .city-districs .city-flex {
-        width: 100%;
-        padding: var(--space-5);
+    .city-districs .city-flex .section-head h2 {
+        font-size: var(--font-size-3xl);
     }
 
     .district-grid {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-
-        display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: var(--space-5);
     }
 
-    .district-grid .district-card {
-        width: 100%;
-        overflow: hidden;
+    .district-grid .district-card:nth-child(1) {
+        grid-row: auto;
+        grid-column: span 2;
     }
 
-    .district-grid .district-card img {
-        display: block;
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
+    .district-grid .district-card:nth-child(1) img {
+        height: 450px;
+        min-height: 0;
     }
 
-    /* First district remain larger */
-    .district-grid .district-card:first-child {
-        grid-row: span 2;
+
+    /* Economic engine */
+    .economic-engine {
+        padding: var(--space-10);
     }
 
-    .district-grid .district-card:first-child img {
-        height: 800px;
+    .economic-engine .economic-container {
+        grid-template-columns: 1fr;
     }
 
-    .district-grid .district-card-content {
-        width: 100%;
-        margin: 0;
-        padding: var(--space-4);
+    .economic-engine .economic-container .economic-title h2 {
+        font-size: var(--font-size-3xl);
     }
 
-    .district-grid .district-card-content a {
-        width: fit-content;
+    .economic-engine .economic-container .main-business-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+
+    /* Culture */
+    .culture-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .culture-grid .culture-card:nth-child(1) {
+        grid-column: span 2;
+    }
+
+
+
 
 
    
-       /* ECONOMIC ENGINE */
-  
-
-    .economic-engine {
-        width: 100%;
-        padding: var(--space-8) 1rem;
-    }
-
 
 
        /* DIRECTORY */
@@ -797,104 +796,132 @@
     }
 
 
-       /* LAST VISIT */
-    
-
-    .last-visit-section {
-        width: 100%;
-        padding: 0 1rem;
+        .last-visit-section .visit {
+        padding: var(--space-8);
     }
 
-    .last-visit-section .visit {
-        width: 100%;
-        padding: var(--space-4);
+    .last-visit-section .visit .grid-visit-card {
+        grid-template-columns: 1fr;
     }
 
-
-       /* CITY STATISTICS */
-       
-
-    .statistics {
-        width: 100%;
-        padding: 0 1rem;
-    }
-
-    .statistics .city-flex {
-        width: 100%;
-        padding: var(--space-5);
-    }
-
-    .statistics .section-p {
-        width: 100%;
-    }
-
-    .statistics-grid {
-        width: 100%;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: var(--space-4);
+    .last-visit-section .visit .grid-visit-card .joburg {
+        padding: var(--space-3);
     }
 
 
-       /* CITY DISTRICTS */
-       
+    /* City statistics */
+    .city-statistics {
+        padding: var(--space-8);
+    }
 
+    .city-statistics .city-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: var(--space-8);
+    }
+
+    .city-statistics .city-flex .section-head h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .city-statistics .city-flex .section-p p {
+        max-width: 100%;
+    }
+
+    .city-statistics .statistics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .city-statistics .statistics-grid .stat-card {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        padding: var(--space-6);
+    }
+
+    .city-statistics .statistics-grid .stat-card:last-child {
+        border-bottom: none;
+    }
+
+    .stat-card h3 {
+        font-size: var(--font-size-3xl);
+    }
+
+
+    /* City districts */
     .city-districs {
-        width: 100%;
-        padding: 0 1rem;
+        padding: var(--space-8);
     }
 
     .city-districs .city-flex {
-        width: 100%;
-        padding: var(--space-5);
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: var(--space-8);
+    }
+
+    .city-districs .city-flex .section-head h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .city-districs .city-flex .section-p {
+        max-width: 100%;
     }
 
     .district-grid {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-
         grid-template-columns: 1fr;
-        gap: var(--space-5);
+        gap: var(--space-4);
     }
 
-    .district-grid .district-card {
-        width: 100%;
-    }
-
-    .district-grid .district-card:first-child {
+    .district-grid .district-card:nth-child(1) {
+        grid-column: auto;
         grid-row: auto;
     }
 
-    .district-grid .district-card img,
-    .district-grid .district-card:first-child img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
-    .district-card:hover img {
-        transform: scale(1.04);
+    .district-grid .district-card:nth-child(1) img {
+        height: 350px;
+        min-height: 0;
     }
 
-    .district-grid .district-card-content {
-        width: 100%;
-        margin: 0;
-        padding: var(--space-4);
-    }
-
-    .district-grid .district-card-content a {
-        display: inline-flex;
-        width: fit-content;
+    .district-card img {
+        height: 300px;
     }
 
 
-       /* ECONOMIC ENGINE */
-       
-
+    /* Economic engine */
     .economic-engine {
-        width: 100%;
-        padding: var(--space-8) 1rem;
+        padding: var(--space-8);
     }
 
+    .economic-engine .economic-container {
+        grid-template-columns: 1fr;
+    }
+
+    .economic-engine .economic-container .economic-title h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .economic-engine .economic-container .main-business-details {
+        grid-template-columns: 1fr;
+    }
+
+    .economic-engine .economic-container .flex-detail {
+        border-right: none;
+    }
+
+
+    /* Culture */
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .culture-grid .culture-card:nth-child(1) {
+        grid-column: auto;
+    }
+
+    .culture-grid .culture-card .culture-card-content {
+        top: auto;
+        left: 4%;
+        bottom: 5%;
+    }
 
        /* DIRECTORY */
 
@@ -1357,113 +1384,135 @@
         padding: var(--space-4);
     }
 
-
-   
-       /* LAST VISIT */
-    
-
-    .last-visit-section {
-        width: 100%;
-        padding-inline: 0.75rem;
-    }
-
+    /* Last visit */
     .last-visit-section .visit {
-        width: 100%;
-        padding: var(--space-4);
+        padding: var(--space-6);
     }
 
-
-   
-       /* CITY STATISTICS */
-  
-
-    .statistics {
-        width: 100%;
-        padding-inline: 0.75rem;
+    .last-visit-section .visit .grid-visit-card {
+        gap: var(--space-2);
     }
 
-    .statistics .city-flex {
-        width: 100%;
-        padding: var(--space-4);
+    .last-visit-section .visit .grid-visit-card .joburg {
+        padding: var(--space-2);
     }
 
-    .statistics .section-p {
-        width: 100%;
-    }
-
-    .statistics-grid {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--space-3);
-    }
-
-    .statistics-grid .stat-card {
-        min-width: 0;
-        padding: var(--space-3);
-    }
-
-
-       /* CITY DISTRICTS */
-   
-
-    .city-districs {
-        width: 100%;
-        padding-inline: 0.75rem;
-    }
-
-    .city-districs .city-flex {
-        width: 100%;
-        padding: var(--space-4);
-    }
-
-    .district-grid {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: var(--space-4);
-        margin: 0;
+    .last-visit-section .visit .grid-visit-card .joburg .firt {
         padding: 0;
     }
 
-    .district-grid .district-card {
+    .last-visit-section .visit .grid-visit-card .joburg .firt i {
+        width: 42px;
+        height: 42px;
+        margin-right: var(--space-2);
+    }
+
+
+    /* City statistics */
+    .city-statistics {
+        padding: var(--space-6);
+    }
+
+    .city-statistics .city-flex .section-head h5,
+    .city-districs .city-flex .section-head h5 {
+        font-size: var(--font-size-xs);
+    }
+
+    .city-statistics .city-flex .section-head h2,
+    .city-districs .city-flex .section-head h2 {
+        font-size: var(--font-size-xl);
+        letter-spacing: 1px;
+    }
+
+    .city-statistics .statistics-grid .stat-card {
+        padding: var(--space-5);
+    }
+
+    .stat-card h3 {
+        font-size: var(--font-size-2xl);
+    }
+
+
+    /* Industries */
+    .city-statistics .industries-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+
+
+    /* City districts */
+    .city-districs {
+        padding: var(--space-6);
+    }
+
+    .district-grid {
+        gap: var(--space-3);
+    }
+
+    .district-card img,
+    .district-grid .district-card:nth-child(1) img {
+        height: 260px;
+    }
+
+    .district-card .district-card-content {
+        padding: var(--space-3);
+    }
+
+    .district-card .district-card-content h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    .district-card-content a {
         width: 100%;
     }
 
-    .district-grid .district-card:first-child {
-        grid-row: auto;
+
+    /* Economic engine */
+    .economic-engine {
+        padding: var(--space-6);
     }
 
-    .district-grid .district-card img,
-    .district-grid .district-card:first-child img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
+    .economic-engine .economic-container .economic-title h2 {
+        font-size: var(--font-size-xl);
+        letter-spacing: 1px;
     }
 
-    .district-grid .district-card-content {
-        width: 100%;
-        margin: 0;
+    .economic-engine .economic-container .economic-title p {
+        line-height: 1.7;
+    }
+
+    .economic-engine .economic-container .main-business-details {
+        grid-template-columns: 1fr;
+    }
+
+    .economic-engine .economic-container .flex-detail {
         padding: var(--space-4);
     }
 
-    .district-grid .district-card-content h3 {
-        font-size: var(--font-size-xl);
+
+    /* Culture */
+    .culture-grid {
+        gap: var(--space-3);
     }
 
-    .district-grid .district-card-content p {
+    .culture-grid .culture-card .culture-card-content {
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+    }
+
+    .culture-card-content h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    .culture-card-content p {
         font-size: var(--font-size-sm);
-        line-height: 1.6;
-
     }
-    /* ECONOMIC ENGINE */
+
+
+   
        
-
-    .economic-engine {
-        width: 100%;
-        padding: var(--space-8) 0.75rem;
-    }
-
-
-    
        /* DIRECTORY */
 
 
