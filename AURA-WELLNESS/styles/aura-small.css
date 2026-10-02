@@ -1,0 +1,643 @@
+
+/* ==========================================================
+   TABLETS & SMALL LAPTOPS (992px)
+========================================================== */
+
+@media screen and (max-width: 992px) {
+
+    /* ---------- Header ---------- */
+
+    header {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    nav a {
+        font-size: .95rem;
+        padding: .8rem;
+        margin-right: .5rem;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        min-height: 55vh;
+    }
+
+    .hero-content {
+        padding: 4rem 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    /* ---------- Services ---------- */
+
+    .services {
+        padding: 4rem 1.5rem;
+    }
+
+    .short-dev {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .short-menu {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    /* ---------- About ---------- */
+
+    .about {
+        padding: 4rem 1.5rem;
+    }
+
+    .about .about-data {
+        gap: 2rem;
+    }
+
+    .about .story-img img {
+        height: 450px;
+    }
+
+    /* ---------- Mission ---------- */
+
+    .mission {
+        min-height: 520px;
+    }
+
+    .mission .objective {
+        padding: 1rem;
+    }
+
+ 
+
+    /* ---------- Team ---------- */
+
+    .team-info {
+        padding: 4rem 1.5rem;
+    }
+
+    .team-info .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------- Services Page ---------- */
+
+    .services-menu {
+        padding: 4rem 1.5rem;
+    }
+
+    .services-menu .card-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .services-menu .service-img {
+        margin: 0;
+    }
+
+    .services-menu .service-img img {
+        height: 350px;
+    }
+
+    .services-menu .info .inner-data {
+        padding-right: 0;
+    }
+
+    /* ---------- Book ---------- */
+
+    .book {
+        padding: 4rem 1.5rem;
+    }
+
+    /* ---------- Gallery ---------- */
+
+    .gallery {
+        padding: 4rem 1.5rem;
+    }
+
+    .gallery-btn {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .grid-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-img img {
+        height: 320px;
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact .contact-info {
+        width: 100%;
+        padding-right: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .form-content {
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .user-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer .info {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        align-items: start;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE DEVICES (768px)
+========================================================== */
+
+@media screen and (max-width:768px){
+
+    /* ---------- General ---------- */
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+
+    h3{
+        font-size:1.4rem;
+    }
+
+    section{
+        padding:4rem 1rem;
+    }
+
+    /* ---------- Header ---------- */
+
+    header{
+        grid-template-columns:1fr auto;
+        padding:0 .8rem;
+    }
+
+    .logo{
+        width:150px;
+        padding-left:0;
+    }
+
+    .button{
+        display:block;
+    }
+
+    #menu{
+        border:none;
+        background:none;
+        font-size:2rem;
+        cursor:pointer;
+        color:var(--primary);
+    }
+
+    nav{
+        display:none;
+        grid-column:1/-1;
+        flex-direction:column;
+        background:var(--section-bg);
+        width:100%;
+        border-top:1px solid var(--border);
+    }
+
+    .navigation.open{
+        display:flex;
+    }
+
+    nav a{
+        width:100%;
+        margin:0;
+        padding:1rem;
+        text-align:left;
+        border-bottom:1px solid var(--border);
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+        min-height:65vh;
+        background:url("../images/deep-tissue-5.webp") center/cover no-repeat;
+    }
+
+    .hero-video{
+        display:none;
+    }
+
+    .hero-content{
+        padding:2rem 1rem;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+        padding-bottom:2rem;
+    }
+
+    /* ---------- Services ---------- */
+
+    .short-dev{
+        flex-direction:column;
+        text-align:center;
+        gap:1rem;
+    }
+
+    .short-menu{
+        grid-template-columns:1fr;
+    }
+
+    .short-menu figure img{
+        height:auto;
+    }
+
+    /* ---------- About ---------- */
+
+    .about .about-data{
+        grid-template-columns:1fr;
+    }
+
+    .about .story-img{
+        order:-1;
+    }
+
+    .about .story-img img{
+        height:400px;
+    }
+
+    .self-story{
+        padding:0;
+    }
+
+    /* ---------- Mission ---------- */
+
+   .mission{
+   
+    min-height: 400px;
+    margin: 3rem auto;
+    overflow: hidden;
+   }
+
+    .mission .objective{
+        padding:1rem 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+  
+
+    .mission .objective h1{
+        font-size:1.8rem;
+        
+    }
+    .mission .objective p{
+        padding-bottom: 2rem;
+        
+    }
+    
+
+    /* ---------- Team ---------- */
+
+    .team-info .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-grid .more,
+    .team-grid .info-m{
+        margin:0;
+        padding:1rem;
+    }
+
+    /* ---------- Services Page ---------- */
+
+    .services-menu{
+        padding:4rem 1rem;
+    }
+
+    .services-menu .card-section{
+        grid-template-columns:1fr;
+    }
+
+    .services-menu .service-img{
+        margin:0;
+    }
+
+    .services-menu .service-img img{
+        height:320px;
+    }
+
+    .services-menu .image-data{
+        width:100%;
+    }
+
+    .services-menu .info .inner-data{
+        flex-direction:row;
+        justify-content:space-between;
+        width:100%;
+    }
+
+    /* ---------- Book ---------- */
+
+    .book .book-section{
+        padding:2rem 1rem;
+        text-align:center;
+    }
+
+    /* ---------- Gallery ---------- */
+
+    .gallery{
+        padding:3rem 1rem;
+    }
+
+    .gallery-btn{
+        display:flex;
+        flex-wrap:wrap;
+        gap:.8rem;
+        justify-content:space-between;
+    }
+
+    .gallery-btn .btn{
+        flex:1 1 140px;
+        text-align:center;
+    }
+
+    .grid-gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-img img{
+        height:300px;
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .contact .contact-info{
+        margin:2rem 1rem;
+        width:100%;
+        padding:2rem;
+    }
+
+    .form-content{
+        width:100%;
+        margin:0;
+    }
+   
+
+    .user-grid{
+        grid-template-columns:1fr;
+    }
+
+    .user-grid .full{
+        grid-column:auto;
+    }
+
+    .user-grid button{
+        width:100%;
+        margin:2rem 0;
+    }
+
+    /* ---------- Thank You ---------- */
+
+    .thanks,
+    .appointment{
+        width:100%;
+        padding:2rem 1rem;
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer .info{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:2rem;
+    }
+
+    footer .main{
+        align-items:center;
+    }
+
+    footer .media{
+        flex-wrap:wrap;
+    }
+
+    footer .right{
+        text-align:center;
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL PHONES (480px)
+========================================================== */
+
+@media screen and (max-width:480px){
+
+    /* ---------- Typography ---------- */
+
+    h1{
+        font-size:1.8rem;
+        line-height:1.2;
+    }
+
+    h2{
+        font-size:1.5rem;
+    }
+
+    h3{
+        font-size:1.2rem;
+    }
+
+    p{
+        font-size:.95rem;
+        line-height:1.6;
+    }
+
+    /* ---------- Header ---------- */
+
+    header{
+        padding:0 .6rem;
+    }
+
+    .logo{
+        width:130px;
+    }
+
+    #menu{
+        font-size:1.9rem;
+        padding: 1rem;
+    }
+
+    nav a{
+        padding:.9rem;
+        font-size:.95rem;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+        min-height:55vh;
+    }
+
+    .hero-content{
+        padding:1.5rem .8rem;
+    }
+
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .hero-content p{
+        font-size:.95rem;
+        padding-bottom:1.5rem;
+    }
+
+    .hero-content .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    /* ---------- Sections ---------- */
+
+    .services,
+    .about,
+    .gallery,
+    .clients,
+    .services-menu,
+    .book,
+    .team-info{
+        padding:3rem 1rem;
+    }
+
+    /* ---------- About ---------- */
+
+    .about .story-img img{
+        height:300px;
+    }
+
+    /* ---------- Mission ---------- */
+
+    .mission{
+        min-height:300px;
+    }
+
+    .mission .objective{
+        padding:1.5rem .8rem;
+    }
+
+    .mission .objective h1{
+        font-size:1.5rem;
+    }
+
+    /* ---------- Gallery ---------- */
+
+    .gallery-btn{
+        gap:.5rem;
+    }
+
+    .gallery-btn .btn{
+        flex:1 1 100%;
+        font-size:.9rem;
+        padding:.8rem;
+    }
+
+    .gallery-img img{
+        height:240px;
+    }
+
+    /* ---------- Services ---------- */
+
+    .services-menu .service-img img{
+        height:260px;
+        margin-bottom: 1.2rem;
+    }
+
+    .services-menu .info .inner-data{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:.6rem;
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact .contact-info{
+        margin:1.5rem .8rem;
+    }
+
+    .form-content{
+        padding:0;
+    }
+
+    .user-grid label{
+        padding:.3rem;
+    }
+
+    .user-grid button{
+        width:100%;
+        margin:1.5rem 0;
+    }
+
+    /* ---------- Appointment ---------- */
+
+    .thanks,
+    .appointment{
+        padding:1.5rem .8rem;
+    }
+
+    .appointment a{
+        display:block;
+        margin:1rem auto;
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer .info{
+        padding:2rem 1rem;
+        gap:1.5rem;
+    }
+
+    footer .media a{
+        padding:.7rem;
+    }
+
+    footer .right{
+        font-size:.85rem;
+        padding:1rem;
+    }
+
+}

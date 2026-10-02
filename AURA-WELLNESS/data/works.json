@@ -1,0 +1,104 @@
+[
+    {
+        "category": "massage",
+        "title": "Hot stone",
+        "subtitle": "Massage",
+        "image": "images/hotstone-massage.webp"
+    },
+    {
+        "category": "facial",
+        "title": "facial",
+        "subtitle": "trieatment",
+        "image": "images/facial-7.webp"
+    },
+    {
+        "category": "nails",
+        "title": "nail",
+        "subtitle": "trieatment",
+        "image": "images/nail-14.png"
+    },
+    {
+        "category": "eyelash",
+        "title": "Classic Lash",
+        "subtitle": "Eyelash",
+        "image": "images/eyelash-5.webp"
+    },
+    {
+        "category": "massage",
+        "title": "deep tissue",
+        "subtitle": "Massage",
+        "image": "images/deep-tissue-5.webp"
+    },
+    {
+        "category": "facial",
+        "title": "facial",
+        "subtitle": "Massage",
+        "image": "images/facial-1.webp"
+    },
+    {
+        "category": "facial",
+        "title": "Glow Facial",
+        "subtitle": "Facial",
+        "image": "images/facial-4.jpg"
+    },
+    {
+        "category": "waxing",
+        "title": "wax",
+        "subtitle": "face wax",
+        "image": "images/wax-5.jpg"
+    },
+    {
+        "category": "facial",
+        "title": "Luxury Facial",
+        "subtitle": "Facial",
+        "image": "images/facial-2.jpg"
+    },
+    {
+        "category": "nails",
+        "title": "French Nails",
+        "subtitle": "Nails",
+        "image": "images/nail-1.webp"
+    },
+    {
+        "category": "eyelash",
+        "title": "Classic Lash",
+        "subtitle": "Eyelash",
+        "image": "images/eyelash-9.png"
+    },
+    {
+        "category": "nails",
+        "title": "Gel Nails",
+        "subtitle": "Nails",
+        "image": "images/nail-2.webp"
+    },
+    {
+        "category": "waxing",
+        "title": "face Wax",
+        "subtitle": "Waxing",
+        "image": "images/wax-1.webp"
+    },
+    {
+        "category": "eyelash",
+        "title": "Classic Lash",
+        "subtitle": "Eyelash",
+        "image": "images/eyelash-87.webp"
+    },
+    {
+        "category": "nails",
+        "title": "coffin nails",
+        "subtitle": "Nails",
+        "image": "images/nail-3.webp"
+    },
+    {
+        "category": "massage",
+        "title": "swedish Massage",
+        "subtitle": "Swedish",
+        "image": "images/swidish-4.webp"
+    },
+    {
+        "category": "waxing",
+        "title": "leg Wax",
+        "subtitle": "Waxing",
+        "image": "images/wax-3.jpg"
+    }
+]

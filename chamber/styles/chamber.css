@@ -811,6 +811,8 @@ nav a.active {
     font-size: smaller;
 }
 
+
+
 /* last visit in the discover page */
 .last-visit-section{
     background: var(--color-background-dark);
