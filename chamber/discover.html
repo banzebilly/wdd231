@@ -1,82 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-   <meta
+<meta
     name="description"
     content="Discover Johannesburg's districts, industries, culture, landmarks, and opportunities through the Johannesburg Chamber of Commerce."
-    >
+>
 
-    <meta
-        name="author"
-        content="Banze Billy"
-    >
+<meta
+    name="author"
+    content="Banze Billy"
+>
 
-    <meta
-        name="keywords"
-        content="Johannesburg Chamber of Commerce, province, Johannesburg businesses, networking, entrepreneurs"
-    >
+<meta
+    name="keywords"
+    content="Johannesburg Chamber of Commerce, Johannesburg businesses, networking, entrepreneurs"
+>
 
-    <meta name="theme-color" content="#0B1F3A">
+<meta name="theme-color" content="#0B1F3A">
 
-    <!--the  Open Graph -->
-   <meta property="og:title"
-      content="Discover Johannesburg | Johannesburg Chamber of Commerce"
-    >
+<!-- Open Graph -->
+<meta
+    property="og:title"
+    content="Discover Johannesburg | Johannesburg Chamber of Commerce"
+>
 
-    <meta property="og:description"
-      content="Discover Johannesburg's districts, industries, culture, landmarks, and opportunities.">
+<meta
+    property="og:description"
+    content="Discover Johannesburg's districts, industries, culture, landmarks, and opportunities."
+>
 
-    <meta
-        property="og:image"
-        content="https://banzebilly.github.io/wdd231/chamber/images/joburg2.webp"
-    >
+<meta
+    property="og:image"
+    content="https://banzebilly.github.io/wdd231/chamber/images/joburg2.webp"
+>
 
-   <meta property="og:url"
-      content="https://banzebilly.github.io/wdd231/chamber/discover.html">
+<meta
+    property="og:url"
+    content="https://banzebilly.github.io/wdd231/chamber/discover.html"
+>
 
-   <title>Discover Johannesburg | Johannesburg Chamber of Commerce</title>
+<title>Discover Johannesburg | Johannesburg Chamber of Commerce</title>
 
-    <!--the Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+>
 
-    <!--the Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    >
+<!-- CSS -->
+<link rel="stylesheet" href="styles/chamber.css">
+<link rel="stylesheet" href="styles/small-chamber.css">
 
-    <!--the  CSS -->
-    <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="stylesheet" href="styles/small-chamber.css">
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.ico">
 
-    <!--the favican I created Favicon -->
-    <link rel="icon" href="images/favicon.ico">
-
-    <!--the JavaScript -->
-    <script type="module"  src="scripts/main.mjs" ></script>
-    <script   src="scripts/scroll.mjs" defer ></script>
-    
+<!-- JavaScript -->
+<script type="module" src="scripts/main.mjs"></script>
+<script src="scripts/scroll.mjs" defer></script>
+```
 
 </head>
 
 <body>
- <header>
+
+<header>
+
     <div class="logo-link">
+
         <img
             src="images/chamber-logo.svg"
             alt="Johannesburg Chamber of Commerce logo"
@@ -88,391 +90,518 @@
             <h4>Johannesburg Chamber of Commerce</h4>
             <p>Connect . Advocate . Grow</p>
         </div>
+
     </div>
 
+
     <div class="header-navigation">
+
         <button
             id="menu"
+            type="button"
             aria-label="Open navigation menu"
             class="button">
         </button>
 
-        <nav class="navigation " >
+        <nav class="navigation">
+
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join The Chamber</a>
-        </nav>
-    </div>
-</header>
 
+        </nav>
+
+    </div>
+
+</header>
 
 
 <main>
 
     <!-- PAGE HERO -->
+    <section class="hero scroll-reveal">
 
-        <section class="hero scroll-reveal">
+        <div class="info">
 
-            <div class="info">
+            <h5>
+                <span>Discover Johannesburg</span>
+            </h5>
 
-                <h5>
-                    <span>Discover Johannesburg</span>
-                </h5>
+            <h1>
+                Explore the city behind the business community.
+            </h1>
 
-                <h1>Explore the city behind the business community.</h1>
+            <p>
+                A city of enterprise, culture and possibility.
+                Discover the places, people and industries that
+                move Johannesburg forward.
+            </p>
 
-                <p>A city of enterprise, culture and possibility. Discover the places, people and industries that move Johannesburg forward.</p>
-                   
-
-            </div>
-
-        </section>
-
-
-    
-
-    <section class="last-visit-section scroll-reveal">
-
-        <div class="visit">
-            <h5>Your Johannesburg</h5>
-            <div class="grid-visit-card">
-                <div class="joburg">
-                    <div class="firt">
-                        <i class="fa-solid fa-location-dot" ></i>
-                        <h2>Welcome to Johannesburg</h2>
-                    </div>
-                    
-                    
-                   
-                </div>
-                <div class="joburg">
-                    <i class="fa-solid fa-calendar"></i>
-                    <div class="p">
-                        
-                        <p>Last visit</p>
-                        <p>First time here</p>
-                    </div>
-                   
-                </div>
-                <div class="joburg ">
-                    <i class="fa-solid fa-clock"></i>
-                    <div class="p">
-                        
-                        <p>Local time</p>
-                        <p>South Africa · SAST</p>
-                    </div>
-                   
-                </div>
-                <div class="joburg back-gr">
-                         <h5>City fact</h5>
-                        <p>Johannesburg is one of the world's largest urban forests, with millions of trees across the city.</p>
-                      
-                    </div>
-                   
-                </div>
-
-            </div>
-
-            
         </div>
-
 
     </section>
 
-  
-    <section class="city-statistics" aria-labelledby="city-statistics-title">
+
+    <!-- LAST VISIT -->
+    <section class="last-visit-section scroll-reveal">
+
+        <div class="visit">
+
+            <h5>Your Johannesburg</h5>
+
+            <div class="grid-visit-card">
+
+                <div class="joburg">
+
+                    <div class="firt">
+
+                        <span
+                            class="text-icon"
+                            aria-hidden="true">
+                            ●
+                        </span>
+
+                        <h2>Welcome to Johannesburg</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="joburg">
+
+                    <span
+                        class="text-icon"
+                        aria-hidden="true">
+                        ●
+                    </span>
+
+                    <div class="p">
+                        <p>Last visit</p>
+                        <p>First time here</p>
+                    </div>
+
+                </div>
+
+
+                <div class="joburg">
+
+                    <span
+                        class="text-icon"
+                        aria-hidden="true">
+                        ●
+                    </span>
+
+                    <div class="p">
+                        <p>Local time</p>
+                        <p>South Africa · SAST</p>
+                    </div>
+
+                </div>
+
+
+                <div class="joburg back-gr">
+
+                    <h5>City fact</h5>
+
+                    <p>
+                        Johannesburg is one of the world's largest
+                        urban forests, with millions of trees across
+                        the city.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CITY STATISTICS -->
+    <section
+        class="city-statistics"
+        aria-labelledby="city-statistics-title">
+
         <div class="city-flex">
+
             <div class="section-head">
-                <h5 class="eyebrow">The city in numbers</h5>
-                <h2 id="city-statistics-title">Johannesburg at a glance</h2>
+
+                <h5 class="eyebrow">
+                    The city in numbers
+                </h5>
+
+                <h2 id="city-statistics-title">
+                    Johannesburg at a glance
+                </h2>
+
             </div>
 
             <div class="section-p">
-            
-                <p>South Africa's commercial heart and a gateway to opportunity across the continent.</p>
+
+                <p>
+                    South Africa's commercial heart and a gateway
+                    to opportunity across the continent.
+                </p>
+
             </div>
 
         </div>
 
-        <!-- JavaScript will insert the statistic cards here -->
-        <div class="statistics-grid" id="statistics-grid">
-            
-            
 
+        <!-- JavaScript inserts the statistics here -->
+        <div
+            class="statistics-grid"
+            id="statistics-grid">
         </div>
 
+
         <div class="industries-flex">
+
             <p>Key industries</p>
             <p>Finance</p>
             <p>Technology</p>
             <p>Mining</p>
             <p>Manufacturing</p>
             <p>Trade</p>
+
         </div>
 
     </section>
 
 
+    <!-- DISTRICTS -->
+    <section
+        class="city-districs"
+        aria-labelledby="districts-title">
 
-    <!-- distric section start here  -->
-    <section class="city-districs  " aria-labelledby="city-disctrics-title">
         <div class="city-flex">
+
             <div class="section-head">
-                <h5 class="eyebrow">Neighbourhoods & precincts</h5>
-                <h2 id="city-statistics-title">Explore Johannesburg</h2>
+
+                <h5 class="eyebrow">
+                    Neighbourhoods &amp; precincts
+                </h5>
+
+                <h2 id="districts-title">
+                    Explore Johannesburg
+                </h2>
+
             </div>
 
             <div class="section-p">
-            
-                <p>Every district tells a different story. Start with the places shaping Johannesburg today.</p>
+
+                <p>
+                    Every district tells a different story.
+                    Start with the places shaping Johannesburg today.
+                </p>
+
             </div>
 
         </div>
 
 
-        <div class="district-grid" id="district-grid"> 
-            <!-- JavaScript will create the district cards here -->
-            <article class="district-card">
-            <img src="images/sandton.webp" alt="Sandton Johannesburg" width="500" height="800" loading="lazy">
-            
-                <div class="district-card-content">
-                    <p class="district-category">Business District</p>
-                    <h3>Sandton</h3>
-                    <p>
-                        Africa's financial centre, defined by commerce,
-                        architecture and global ambition.
-                    </p>
-
-                    <a href="#">
-                        Explore <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-           
+        <!-- JavaScript creates the district cards here -->
+        <div
+            class="district-grid"
+            id="district-grid">
         </div>
-   
-
-      
 
     </section>
 
 
+    <!-- ECONOMIC ENGINE -->
+    <section class="economic-engine scroll-reveal">
 
-    <!-- economy engine section  -->
-    <section class="economic-engine  scroll-reveal">
         <div class="economic-container">
+
             <div class="economic-title">
-                <h5 class="eyebrow">Econimic engine</h5>
+
+                <h5 class="eyebrow">
+                    Economic engine
+                </h5>
+
                 <h2>Business Johannesburg</h2>
-                <p>johannesburg brings established industries and bold new ventures together. The chamber connect the people and organisations building its next chapter</p>
+
+                <p>
+                    Johannesburg brings established industries
+                    and bold new ventures together. The chamber
+                    connects the people and organisations building
+                    its next chapter.
+                </p>
 
                 <a href="directory.html">
-                    Explore business directory  <i class="fa-solid fa-arrow-right"></i>
+                    Explore business directory
+                    <span aria-hidden="true">→</span>
                 </a>
+
             </div>
+
 
             <div class="main-business-details">
+
                 <div class="flex-detail">
-                   
+
                     <div class="name">
-                         <div class="icon">
-                        <i class="fa-solid fa-coins"></i>
+
+                        <div
+                            class="icon"
+                            aria-hidden="true">
+                            $
                         </div>
+
                         <div class="detail">
+
                             <h4>Finance</h4>
-                            <p>Banking, investment and professional services</p>
+
+                            <p>
+                                Banking, investment and professional services
+                            </p>
 
                         </div>
-                        
+
                     </div>
 
                 </div>
+
+
                 <div class="flex-detail">
-                  
+
                     <div class="name">
-                          <div class="icon">
-                        <i class="fa-solid fa-microchip"></i>
+
+                        <div
+                            class="icon"
+                            aria-hidden="true">
+                            #
                         </div>
+
                         <div class="detail">
+
                             <h4>Technology</h4>
-                            <p>Digital innovation and emerging enterprise</p>
+
+                            <p>
+                                Digital innovation and emerging enterprise
+                            </p>
 
                         </div>
-                        
+
                     </div>
-                  
 
                 </div>
+
+
                 <div class="flex-detail">
-                  
-                    
+
                     <div class="name">
-                         <div class="icon">
-                        <i class="fa-solid fa-shop"></i>
+
+                        <div
+                            class="icon"
+                            aria-hidden="true">
+                            +
                         </div>
+
                         <div class="detail">
+
                             <h4>Retail</h4>
-                        <p>Regional commerce and consumer markets</p>
+
+                            <p>
+                                Regional commerce and consumer markets
+                            </p>
 
                         </div>
 
-                        
                     </div>
 
                 </div>
+
+
                 <div class="flex-detail">
-                  
+
                     <div class="name">
 
-                          <div class="icon">
-                                <i class="fa-solid fa-plane-departure"></i>
+                        <div
+                            class="icon"
+                            aria-hidden="true">
+                            ✈
                         </div>
 
                         <div class="detail">
+
                             <h4>Tourism</h4>
-                        <p>Business travel, hospitality and experiences</p>
+
+                            <p>
+                                Business travel, hospitality and experiences
+                            </p>
 
                         </div>
-                        
+
                     </div>
-                  
-              
 
                 </div>
+
+
                 <div class="flex-detail">
-                
-                   
+
                     <div class="name">
-                         <div class="icon">
-                        <i class="fa-solid fa-rocket"></i>
+
+                        <div
+                            class="icon"
+                            aria-hidden="true">
+                            ↑
                         </div>
+
                         <div class="detail">
+
                             <h4>Entrepreneurship</h4>
-                        <p>Startups, creators and growing ventures</p>
+
+                            <p>
+                                Startups, creators and growing ventures
+                            </p>
 
                         </div>
-                        
+
                     </div>
-              
 
                 </div>
+
+
                 <div class="flex-detail">
-                
-                 
-                 
+
                     <div class="name">
-                         <div class="icon">
-                        <i class="fa-solid fa-truck-fast"></i>
+
+                        <div
+                            class="icon"
+                            aria-hidden="true">
+                            →
                         </div>
+
                         <div class="detail">
-                             <h4>Trade & Logistics</h4>
-                                <p>Trade, distribution, transport and supply chains</p>
+
+                            <h4>Trade &amp; Logistics</h4>
+
+                            <p>
+                                Trade, distribution, transport and supply chains
+                            </p>
+
                         </div>
-                       
+
                     </div>
 
                 </div>
 
-        
-              
-
-            </div>
-        </div>
-     </section>
-
-       <!-- place and culture  -->
-    <section class="city-districs scroll-reveal" aria-labelledby="city-disctrics-title">
-        <div class="city-flex">
-            <div class="section-head">
-                <h5 class="eyebrow">beyond Business</h5>
-                <h2 id="city-statistics-title">PLACE & CULTURE</h2>
-            </div>
-
-            <div class="section-p">
-            
-                <p>Meet the  histories, ideas and creative energy that  give johannesburg its character.</p>
             </div>
 
         </div>
-
-
-     <div class="culture-grid" id="culture-grid">
-        <!-- JavaScript wil load here  -->
-
-       
-
-
-       
-
-</div>
-
-      
 
     </section>
 
 
+    <!-- PLACE AND CULTURE -->
+    <section
+        class="city-districs scroll-reveal"
+        aria-labelledby="culture-title">
 
+        <div class="city-flex">
+
+            <div class="section-head">
+
+                <h5 class="eyebrow">
+                    Beyond Business
+                </h5>
+
+                <h2 id="culture-title">
+                    Place &amp; Culture
+                </h2>
+
+            </div>
+
+            <div class="section-p">
+
+                <p>
+                    Meet the histories, ideas and creative energy
+                    that give Johannesburg its character.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- JavaScript loads the culture cards here -->
+        <div
+            class="culture-grid"
+            id="culture-grid">
+        </div>
+
+    </section>
 
 </main>
 
 
- <!-- Footer -->
-        <footer>
+<!-- FOOTER -->
+<footer>
 
-            <div class="become-member">
+    <div class="become-member">
 
-                <div class="contact-info">
+        <div class="contact-info">
 
-                    <div class="contact">
+            <div class="contact">
 
-                        <h2>Grow Your Business With Us</h2>
+                <h2>Grow Your Business With Us</h2>
 
-                        <p>
-                            Membership starts at R750 a year and includes
-                            a directory listing, event access and direct
-                            representation in the city's business forums.
-                        </p>
+                <p>
+                    Membership starts at R750 a year and includes
+                    a directory listing, event access and direct
+                    representation in the city's business forums.
+                </p>
 
-                        <div class="n">
+                <div class="n">
 
-                            <i
-                                class="fa-solid fa-phone"
-                                aria-hidden="true">
-                            </i>
+                    <span
+                        class="text-icon"
+                        aria-hidden="true">
+                        ☎
+                    </span>
 
-                            Prefer to talk first?
-                            Call +27 11 339 5500
-
-                        </div>
-
-                    </div>
-
-
-                    <a href="join.html" class="header-cta">
-
-                        <i
-                            class="fa-solid fa-user-plus"
-                            aria-hidden="true">
-                        </i>
-
-                        Become a Member
-
-                    </a>
+                    Prefer to talk first?
+                    Call +27 11 339 5500
 
                 </div>
 
             </div>
 
 
-            <p>
-                &copy;
-                <span id="currentyear"></span>
-                Banze Billy | South Africa
-            </p>
+            <a
+                href="join.html"
+                class="header-cta">
 
-            <p id="lastModified"></p>
+                <span
+                    class="text-icon"
+                    aria-hidden="true">
+                    +
+                </span>
 
-        </footer>
+                Become a Member
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        Banze Billy | South Africa
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
 
 </body>
 </html>
