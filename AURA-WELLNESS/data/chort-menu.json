@@ -2,17 +2,24 @@
 
 
 [
-    {
-        "category": "nails",
-        "title": "Almond Nail",
-        "subtitle": "Nail",
-        "image": "images/nail-14.png"
-    },
+   
     {
         "category": "facial",
         "title": "Facial",
         "subtitle": "Mask",
         "image": "images/facial-2.jpg"
+    },
+    {
+        "category": "facial",
+        "title": "Facial",
+        "subtitle": "Mask",
+        "image": "images/nail-12.webp"
+    },
+    {
+        "category": "facial",
+        "title": "Facial",
+        "subtitle": "Mask",
+        "image": "images/sport-massage-3.jpg"
     },
     {
         "category": "massage",
