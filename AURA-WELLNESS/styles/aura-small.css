@@ -5,7 +5,27 @@
 
 @media screen and (max-width: 992px) {
 
+
+      /* =========================
+       GLOBAL
+    ========================= */
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+    }
+
     /* ---------- Header ---------- */
+
+  
 
     header {
         padding: 0 1rem;
@@ -39,22 +59,42 @@
         font-size: 1.1rem;
     }
 
+
+    /* about us section  */
+   .about-us{
+        width: 100%;
+        padding: var(--space-12);
+   }
+   .about-us .about-page{
+       grid-template-columns: 1fr 1fr;
+
+
+   }
+   .about-us .about-page img:last-child{
+       display: none;
+
+
+   }
+
     /* ---------- Services ---------- */
 
-    .services {
-        padding: 4rem 1.5rem;
+    .short-menu-section {
+        width: 100%;
+        padding: var(--space-12) var(--space-6);
     }
 
-    .short-dev {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
+    .short-menu-section .short-contaner{
+        width: 100%;
     }
+    .short-container figure:first-child {
+    grid-column: span 1;
 
-    .short-menu {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.2rem;
-    }
+}
+
+
+    
+
+    
 
     /* ---------- About ---------- */
 
@@ -179,6 +219,23 @@
 
 @media screen and (max-width:768px){
 
+      /* =========================
+       GLOBAL
+    ========================= */
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+    }
+
     /* ---------- General ---------- */
 
     h1{
@@ -266,21 +323,40 @@
         padding-bottom:2rem;
     }
 
+
+      /* about us section  */
+   .about-us{
+        width: 100%;
+        padding: var(--space-12);
+   }
+   .about-us .about-page{
+       grid-template-columns: 1fr ;
+
+
+   }
+   .about-us .about-page img:last-child{
+       display: none;
+
+
+   }
+   .about-page .main-contents {
+    padding-right: var(--space-12);
+   }
+
     /* ---------- Services ---------- */
-
-    .short-dev{
-        flex-direction:column;
-        text-align:center;
-        gap:1rem;
+      .short-menu-section {
+        width: 100%;
+        padding: var(--space-12) var(--space-6);
     }
 
-    .short-menu{
-        grid-template-columns:1fr;
+    .short-menu-section .short-contaner{
+        width: 100%;
     }
+    .short-container figure:first-child {
+    grid-column: span 1;
 
-    .short-menu figure img{
-        height:auto;
     }
+     
 
     /* ---------- About ---------- */
 
@@ -467,6 +543,22 @@
 ========================================================== */
 
 @media screen and (max-width:480px){
+      /* =========================
+       GLOBAL
+    ========================= */
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+    }
 
     /* ---------- Typography ---------- */
 
@@ -532,16 +624,59 @@
         text-align:center;
     }
 
-    /* ---------- Sections ---------- */
+      .short-menu-section {
+        width: 100%;
+        padding: var(--space-12) var(--space-6);
+    }
 
+    .short-menu-section .short-contaner{
+        width: 100%;
+    }
+    .short-container figure:first-child {
+    grid-column: span 1;
+
+    }
+    .short-menu-section .contents {
+        flex-direction: column;
+        padding: var(--space-6) var(--space-2);
+    
+    }
+
+    /* ---------- Sections ---------- */
+      /* about us section  */
+   .about-us{
+        width: 100%;
+       
+   }
+   .about-us .about-page{
+       grid-template-columns: 1fr;
+       gap: var(--space-6);
+
+
+   }
+   .about-us .about-page img{
+     width: 100%;
+     
+
+
+   }
+   .about-us .about-page img:last-child{
+       display: none;
+
+   }
+
+   .about-page .main-contents {
+    padding-right: var(--space-12);
+}
+    .about-us,
     .services,
     .about,
-    .gallery,
+  
     .clients,
     .services-menu,
     .book,
     .team-info{
-        padding:3rem 1rem;
+        padding:var(--space-6) var(--space-6);
     }
 
     /* ---------- About ---------- */

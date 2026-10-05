@@ -35,10 +35,11 @@
     <link rel="stylesheet" href="styles/aura-small.css">
 
     <!-- Main JavaScript -->
-    <script src="scripts/aura.js" defer></script>
+    <script src="scripts/aura.mjs" type="module"></script>
+    
+    <script src="scripts/services.mjs" type="module"></script>
 
-    <!-- Services Module -->
-    <script type="module" src="scripts/services.mjs"></script>
+   
 </head>
 
 <body>
@@ -62,7 +63,7 @@
 
         <nav class="navigation">
             <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
+            <a href="services.html"class="active" >Services</a>
             <a href="contact.html">Contact</a>
         </nav>
 
@@ -75,11 +76,11 @@
         <!-- ================= HERO ================= -->
         <section class="hero">
 
-            <div class="overlay"></div>
+          
 
             <div class="hero-content">
 
-                <h4>The menu</h4>
+                <h4 class="makeup">The menu</h4>
 
                 <h1>Every service, made with intention</h1>
 

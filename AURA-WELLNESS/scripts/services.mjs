@@ -3,7 +3,7 @@
 const servicesContainer = document.querySelector(".services-menu");
 
 
-async function loadServices() {
+export async function loadServices() {
     try {
         const response = await fetch("data/services.json");
 
@@ -27,7 +27,6 @@ async function loadServices() {
 }
 
 
-// Display all service categories
 function displayServices(services) {
 
     servicesContainer.innerHTML = "";
@@ -65,7 +64,7 @@ function displayServices(services) {
         imageData.appendChild(title);
 
 
-        // Create each individual service
+        //to create each individual service
         service.items.forEach(item => {
 
             const info = document.createElement("div");
@@ -111,7 +110,7 @@ function displayServices(services) {
         });
 
 
-        // Alternate image position
+        // the  image position
         if (index % 2 === 0) {
             card.appendChild(imageDiv);
             card.appendChild(imageData);

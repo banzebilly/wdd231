@@ -6,24 +6,24 @@
         "category": "nails",
         "title": "Almond Nail",
         "subtitle": "Nail",
-        "image": "project/images/nail-14.png"
+        "image": "images/nail-14.png"
     },
     {
         "category": "facial",
         "title": "Facial",
         "subtitle": "Mask",
-        "image": "project/images/facial-2.jpg"
+        "image": "images/facial-2.jpg"
     },
     {
         "category": "massage",
         "title": "Swedish Massage",
         "subtitle": "Massage",
-        "image": "project/images/swidish-4.webp"
+        "image": "images/swidish-4.webp"
     },
     {
         "category": "waxing",
         "title": "Leg Wax",
         "subtitle": "Cold Wax",
-        "image": "project/images/wax-3.jpg"
+        "image": "images/wax-3.jpg"
     }
 ]
