@@ -55,7 +55,7 @@ export async function loadShortMember() {
                         target="_blank"
                         rel="noopener"
                     >
-                        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                       
                         ${member.website}
                     </a>
 

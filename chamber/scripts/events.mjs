@@ -32,7 +32,7 @@ export async function loadEvents() {
                     <p>${event.date}</p>
 
                     <div class="event-location">
-                        <i class="fa-solid fa-location-dot"
+                    
                            aria-hidden="true"></i>
                         ${event.location}
                     </div>

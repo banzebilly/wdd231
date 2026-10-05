@@ -54,16 +54,7 @@ function displayMembershipLevels(memberships) {
             </p>
 
             <ul class="benefits">
-                ${membership.benefits
-                    .map(
-                        (benefit) => `
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                ${benefit}
-                            </li>
-                        `
-                    )
-                    .join("")}
+                ${membership.benefits}
             </ul>
 
             <a
