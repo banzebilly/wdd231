@@ -1,15 +1,14 @@
-
 let districts = [];
 
 export async function loadDistricts() {
-
     try {
         const response = await fetch("data/discover.json");
 
-        if (!response.ok) return;
+        if (!response.ok) {
+            throw new Error(`Failed to load districts: ${response.status}`);
+        }
 
         districts = await response.json();
-
         displayDistricts(districts);
 
     } catch (error) {
@@ -17,19 +16,15 @@ export async function loadDistricts() {
     }
 }
 
-
 const displayDistricts = (districts) => {
-
     const districtContainer = document.querySelector("#district-grid");
 
     if (!districtContainer) return;
 
     districtContainer.innerHTML = "";
 
-    districts.forEach(district => {
-
+    districts.forEach((district) => {
         const districtCard = document.createElement("article");
-
         districtCard.classList.add("district-card");
 
         districtCard.innerHTML = `
@@ -38,8 +33,6 @@ const displayDistricts = (districts) => {
                 alt="${district.location}"
                 width="400"
                 height="270"
-                                    
-
                 loading="lazy"
             >
 
@@ -59,7 +52,7 @@ const displayDistricts = (districts) => {
 
                 <a href="index.html">
                     Explore
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="text-icon" aria-hidden="true">→</span>
                 </a>
 
             </div>
