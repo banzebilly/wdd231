@@ -1,17 +1,15 @@
-/* 
-
-   RESPONSIVE DESIGN
-   Johannesburg Chamber Project
-  
-   TABLET & SMALL LAPTOP
-   978px and below */
-
+/*
+    RESPONSIVE DESIGN
+    Johannesburg Chamber Project
+    TABLET & SMALL LAPTOP
+    978px and below
+*/
 
 @media screen and (max-width: 978px) {
 
-    
-       /* THE GLOBAL */
-       
+    /* =========================
+       GLOBAL
+    ========================= */
 
     html {
         overflow-x: hidden;
@@ -27,9 +25,9 @@
     }
 
 
-   
-       /*THE HEADER */
-      
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
         width: 100%;
@@ -64,9 +62,9 @@
     }
 
 
-
-       /* HERO */
-       
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
         width: 100%;
@@ -103,9 +101,9 @@
     }
 
 
-   
-       /* ABOUT US */
-     
+    /* =========================
+       ABOUT US
+    ========================= */
 
     .about-us {
         width: 100%;
@@ -142,9 +140,9 @@
     }
 
 
-   
-       /* ADVOCACY */
-       
+    /* =========================
+       ADVOCACY
+    ========================= */
 
     .advocancy {
         width: 100%;
@@ -159,9 +157,9 @@
     }
 
 
-
-       /* ABOUT BUSINESS */
-    
+    /* =========================
+       ABOUT BUSINESS
+    ========================= */
 
     .about-busness {
         width: 100%;
@@ -180,9 +178,9 @@
     }
 
 
-  
-       /* WEATHER */
-  
+    /* =========================
+       WEATHER
+    ========================= */
 
     .city-weather {
         width: 100%;
@@ -201,9 +199,9 @@
     }
 
 
- 
-       /* MEMBERS */
-   
+    /* =========================
+       MEMBERS
+    ========================= */
 
     .members {
         width: 100%;
@@ -237,8 +235,9 @@
     }
 
 
-       /* EVENTS */
-     
+    /* =========================
+       EVENTS
+    ========================= */
 
     .event-section {
         width: 100%;
@@ -254,7 +253,11 @@
         padding: var(--space-4);
     }
 
-    * Last visit */
+
+    /* =========================
+       LAST VISIT
+    ========================= */
+
     .last-visit-section .visit {
         padding: var(--space-10);
     }
@@ -264,7 +267,10 @@
     }
 
 
-    /* City statistics */
+    /* =========================
+       CITY STATISTICS
+    ========================= */
+
     .city-statistics {
         padding: var(--space-10);
     }
@@ -294,7 +300,10 @@
     }
 
 
-    /* City districts */
+    /* =========================
+       CITY DISTRICTS
+    ========================= */
+
     .city-districs {
         padding: var(--space-10);
     }
@@ -318,7 +327,10 @@
     }
 
 
-    /* Economic engine */
+    /* =========================
+       ECONOMIC ENGINE
+    ========================= */
+
     .economic-engine {
         padding: var(--space-10);
     }
@@ -336,7 +348,10 @@
     }
 
 
-    /* Culture */
+    /* =========================
+       CULTURE
+    ========================= */
+
     .culture-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -346,14 +361,9 @@
     }
 
 
-
-
-
-   
-
-
-       /* DIRECTORY */
-     
+    /* =========================
+       DIRECTORY
+    ========================= */
 
     .directory {
         width: 100%;
@@ -370,8 +380,9 @@
     }
 
 
-       /* DIRECTORY FILTERS */
-  
+    /* =========================
+       DIRECTORY FILTERS
+    ========================= */
 
     .form-section {
         width: 100%;
@@ -393,8 +404,10 @@
         justify-self: end;
     }
 
-       /* MEMBERSHIP */
-   
+
+    /* =========================
+       MEMBERSHIP
+    ========================= */
 
     .membership-section {
         width: 100%;
@@ -406,6 +419,7 @@
     }
 
     .membership-grid {
+        width: 100%;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: var(--space-5);
     }
@@ -415,9 +429,9 @@
     }
 
 
-  
-       /* APPLICATION */
-   
+    /* =========================
+       APPLICATION
+    ========================= */
 
     .application-section {
         width: 100%;
@@ -441,9 +455,9 @@
     }
 
 
-   
-       /* FOOTER */
-       
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
         width: 100%;
@@ -457,16 +471,16 @@
 }
 
 
-
-
-   /* MOBILE
-   768px and below */
-
+/*
+    MOBILE
+    768px and below
+*/
 
 @media screen and (max-width: 768px) {
 
-       /* GLOBAL */
-    
+    /* =========================
+       GLOBAL
+    ========================= */
 
     html {
         font-size: 16px;
@@ -478,8 +492,9 @@
     }
 
 
-       /* HEADER */
-     
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
         position: relative;
@@ -506,26 +521,22 @@
     }
 
 
-       /* MOBILE MENU */
-     
+    /* =========================
+       MOBILE MENU
+    ========================= */
 
     #menu {
         display: flex;
         align-items: center;
         justify-content: center;
-
         width: 44px;
         height: 44px;
-
         padding: 0;
         margin-left: auto;
-
         border: none;
         background: transparent;
-
         color: var(--color-primary-dark);
         font-size: 1.8rem;
-
         cursor: pointer;
     }
 
@@ -537,32 +548,23 @@
         position: absolute;
         top: 100%;
         left: 0;
-
         display: flex;
         flex-direction: column;
-
         width: 100%;
         margin: 0;
         padding: 0;
-
         background: var(--color-white);
         box-shadow: var(--shadow-md);
-
         z-index: var(--z-menu);
     }
 
     .navigation a {
         display: block;
         width: 100%;
-
         padding: 1rem;
-
         margin: 0;
-
         text-align: left;
-
         border-bottom: 1px solid var(--color-border-light);
-
         color: var(--color-primary-dark);
     }
 
@@ -571,9 +573,9 @@
     }
 
 
-  
-       /* HERO */
-      
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
         width: 100%;
@@ -617,9 +619,9 @@
     }
 
 
-  
-       /* ABOUT US */
-      
+    /* =========================
+       ABOUT US
+    ========================= */
 
     .about-us {
         width: 100%;
@@ -661,9 +663,9 @@
     }
 
 
-   
-       /* ADVOCACY */
-   
+    /* =========================
+       ADVOCACY
+    ========================= */
 
     .advocancy {
         width: 100%;
@@ -677,8 +679,9 @@
     }
 
 
-       /* ABOUT BUSINESS */
-    
+    /* =========================
+       ABOUT BUSINESS
+    ========================= */
 
     .about-busness {
         width: 100%;
@@ -697,9 +700,9 @@
     }
 
 
-  
-       /* WEATHER */
-  
+    /* =========================
+       WEATHER
+    ========================= */
 
     .city-weather {
         width: 100%;
@@ -731,9 +734,9 @@
     }
 
 
-   
-       /* MEMBERS */
-     
+    /* =========================
+       MEMBERS
+    ========================= */
 
     .members {
         width: 100%;
@@ -774,8 +777,9 @@
     }
 
 
-       /* EVENTS */
-      
+    /* =========================
+       EVENTS
+    ========================= */
 
     .event-section {
         width: 100%;
@@ -796,7 +800,11 @@
     }
 
 
-        .last-visit-section .visit {
+    /* =========================
+       LAST VISIT
+    ========================= */
+
+    .last-visit-section .visit {
         padding: var(--space-8);
     }
 
@@ -809,7 +817,10 @@
     }
 
 
-    /* City statistics */
+    /* =========================
+       CITY STATISTICS
+    ========================= */
+
     .city-statistics {
         padding: var(--space-8);
     }
@@ -847,7 +858,10 @@
     }
 
 
-    /* City districts */
+    /* =========================
+       CITY DISTRICTS
+    ========================= */
+
     .city-districs {
         padding: var(--space-8);
     }
@@ -886,7 +900,10 @@
     }
 
 
-    /* Economic engine */
+    /* =========================
+       ECONOMIC ENGINE
+    ========================= */
+
     .economic-engine {
         padding: var(--space-8);
     }
@@ -908,7 +925,10 @@
     }
 
 
-    /* Culture */
+    /* =========================
+       CULTURE
+    ========================= */
+
     .culture-grid {
         grid-template-columns: 1fr;
     }
@@ -923,8 +943,10 @@
         bottom: 5%;
     }
 
-       /* DIRECTORY */
 
+    /* =========================
+       DIRECTORY
+    ========================= */
 
     .directory {
         width: 100%;
@@ -951,8 +973,9 @@
     }
 
 
-       /* DIRECTORY FILTERS */
-      
+    /* =========================
+       DIRECTORY FILTERS
+    ========================= */
 
     .form-section {
         width: 100%;
@@ -978,9 +1001,9 @@
     }
 
 
-    
-       /* MEMBERSHIP */
-       
+    /* =========================
+       MEMBERSHIP
+    ========================= */
 
     .membership-section {
         width: 100%;
@@ -1015,9 +1038,9 @@
     }
 
 
-  
-       /* APPLICATION */
-   
+    /* =========================
+       APPLICATION
+    ========================= */
 
     .application-section {
         width: 100%;
@@ -1060,9 +1083,9 @@
     }
 
 
-  
-       /* FOOTER */
-       
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
         width: 100%;
@@ -1081,17 +1104,16 @@
 }
 
 
-
-
-   /* SMALL PHONES
-   478px and below */
-
+/*
+    SMALL PHONES
+    478px and below
+*/
 
 @media screen and (max-width: 478px) {
 
-    
-       /* HEADER */
-       
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
         width: 100%;
@@ -1122,8 +1144,9 @@
     }
 
 
-       /* HERO */
-      
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
         width: 100%;
@@ -1164,8 +1187,9 @@
     }
 
 
-       /* ABOUT US */
-    
+    /* =========================
+       ABOUT US
+    ========================= */
 
     .about-us {
         width: 100%;
@@ -1208,8 +1232,9 @@
     }
 
 
-       /* ADVOCACY */
-      
+    /* =========================
+       ADVOCACY
+    ========================= */
 
     .advocancy {
         width: 100%;
@@ -1223,9 +1248,9 @@
     }
 
 
-   
-       /* ABOUT BUSINESS */
-       
+    /* =========================
+       ABOUT BUSINESS
+    ========================= */
 
     .about-busness {
         width: 100%;
@@ -1244,9 +1269,9 @@
     }
 
 
-    
-       /* WEATHER */
-       
+    /* =========================
+       WEATHER
+    ========================= */
 
     .city-weather {
         width: 100%;
@@ -1297,8 +1322,9 @@
     }
 
 
-       /* MEMBERS */
-  
+    /* =========================
+       MEMBERS
+    ========================= */
 
     .members {
         width: 100%;
@@ -1363,8 +1389,9 @@
     }
 
 
-       /* EVENTS */
-       
+    /* =========================
+       EVENTS
+    ========================= */
 
     .event-section {
         width: 100%;
@@ -1384,7 +1411,11 @@
         padding: var(--space-4);
     }
 
-    /* Last visit */
+
+    /* =========================
+       LAST VISIT
+    ========================= */
+
     .last-visit-section .visit {
         padding: var(--space-6);
     }
@@ -1408,7 +1439,10 @@
     }
 
 
-    /* City statistics */
+    /* =========================
+       CITY STATISTICS
+    ========================= */
+
     .city-statistics {
         padding: var(--space-6);
     }
@@ -1433,7 +1467,10 @@
     }
 
 
-    /* Industries */
+    /* =========================
+       INDUSTRIES
+    ========================= */
+
     .city-statistics .industries-flex {
         flex-direction: column;
         align-items: flex-start;
@@ -1441,7 +1478,10 @@
     }
 
 
-    /* City districts */
+    /* =========================
+       CITY DISTRICTS
+    ========================= */
+
     .city-districs {
         padding: var(--space-6);
     }
@@ -1468,7 +1508,10 @@
     }
 
 
-    /* Economic engine */
+    /* =========================
+       ECONOMIC ENGINE
+    ========================= */
+
     .economic-engine {
         padding: var(--space-6);
     }
@@ -1491,7 +1534,10 @@
     }
 
 
-    /* Culture */
+    /* =========================
+       CULTURE
+    ========================= */
+
     .culture-grid {
         gap: var(--space-3);
     }
@@ -1511,10 +1557,9 @@
     }
 
 
-   
-       
-       /* DIRECTORY */
-
+    /* =========================
+       DIRECTORY
+    ========================= */
 
     .directory {
         width: 100%;
@@ -1538,9 +1583,9 @@
     }
 
 
-
-       /* DIRECTORY FILTERS */
-       
+    /* =========================
+       DIRECTORY FILTERS
+    ========================= */
 
     .form-section {
         width: 100%;
@@ -1565,8 +1610,9 @@
     }
 
 
-       /* MEMBERSHIP */
-      
+    /* =========================
+       MEMBERSHIP
+    ========================= */
 
     .membership-section {
         width: 100%;
@@ -1622,9 +1668,9 @@
     }
 
 
-    
-       /* APPLICATION */
-      
+    /* =========================
+       APPLICATION
+    ========================= */
 
     .application-section {
         width: 100%;
@@ -1670,8 +1716,10 @@
         grid-column: auto;
     }
 
-       /* FOOTER */
-   
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
         width: 100%;
@@ -1689,4 +1737,3 @@
         text-align: center;
     }
 }
-

@@ -7,11 +7,13 @@
 
     <title>Billy Aura Wellness Studio | Massage, Facials, Nails & Spa</title>
 
-    <meta name="description" content="Billy Aura Wellness Studio offers professional massage therapy, facials, waxing, nail care, and eyelash extension services in a relaxing and welcoming environment.">
+    <meta name="description"
+          content="Billy Aura Wellness Studio offers professional massage therapy, facials, waxing, nail care, and eyelash extension services in a relaxing and welcoming environment.">
 
     <meta name="author" content="Mulopwe Banze Billy">
 
-    <meta name="keywords" content="massage, facial, spa, wellness, nails, waxing, eyelash extensions, beauty salon, Billy Aura Wellness Studio">
+    <meta name="keywords"
+          content="massage, facial, spa, wellness, nails, waxing, eyelash extensions, beauty salon, Billy Aura Wellness Studio">
 
     <meta name="theme-color" content="#C8A96A">
 
@@ -21,7 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
@@ -31,417 +34,215 @@
     <link rel="stylesheet" href="styles/aura.css">
     <link rel="stylesheet" href="styles/aura-small.css">
 
-
-    <!-- JavaScript -->
+    <!-- Main JavaScript -->
     <script src="scripts/aura.js" defer></script>
-</head>
-<body>
-    <!--Header of the project-->
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo-1.webp" alt="Billy Aura Wellness Studio Logo" width="220" height="130"></a>
 
-           
+    <!-- Services Module -->
+    <script type="module" src="scripts/services.mjs"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html">
+                <img
+                    src="images/logo-1.webp"
+                    alt="Billy Aura Wellness Studio Logo"
+                    width="220"
+                    height="130">
+            </a>
         </div>
 
-         <div class="button">
-                <button id="menu" aria-label="Open navigation menu"></button>
-            </div>
+        <div class="button">
+            <button id="menu" aria-label="Open navigation menu"></button>
+        </div>
 
         <nav class="navigation">
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-         
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
-    <!-- ========main========== -->
-  
-        
+
+    <!-- ================= MAIN ================= -->
     <main class="container">
 
+        <!-- ================= HERO ================= -->
         <section class="hero">
-
-         
 
             <div class="overlay"></div>
 
             <div class="hero-content">
-                 <h4>The menu</h4>
+
+                <h4>The menu</h4>
+
                 <h1>Every service, made with intention</h1>
-                <p>We keep our list short so we can do each one beautifully. Every appointment begins with a short consultation and a cup of something warm.</p>
-                
+
+                <p>
+                    We keep our list short so we can do each one beautifully.
+                    Every appointment begins with a short consultation and
+                    a cup of something warm.
+                </p>
+
             </div>
 
         </section>
 
-          <!-- =========services section================ -->
+
+        <!-- ================= SERVICES ================= -->
         <section class="services-menu">
-            <div class="card-section">
-                 <div class="service-img">
-                    <img src="images/massage-p.jpg" alt="" width="700" height="600" loading="lazy">
-                </div>
 
-                <div class="image-data">
-                <h4>Slow, intentional bodywork.</h4>
-                <h1>Massage</h1>
+            <!--
+                Services are loaded dynamically from:
 
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Signature Swidish Massage 60 min</h5>
-                           <p>Full-body relief with warm oil and slow, grounding pressure.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$120</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Deep Tissue 75 min</h5>
-                           <p>Focused release for tight shoulders, hips, and lower back.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$150</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Hot Stone Ritual 90 min</h5>
-                           <p>Basalt stones and aromatic oil — the closest thing to stillness.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$180</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Indian Head Massage · 20 min</h5>
-                          <p>Relieves tension, improves circulation, and helps reduce stress and insomnia.</p>  
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$20</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                    
-               
-            </div>
+                data/services.json
 
-            </div>
-            <div class="card-section">
-                <div class="image-data">
-                <h4>Skin, treated with respect.</h4>
-                <h1>Facials</h1>
+                by:
 
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Glow Facial 50 min</h5>
-                           <p>Cleanse, exfoliate, mask, massage — a reset for tired skin.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$110</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Clarifying Facial 60  min</h5>
-                           <p>Gentle extractions and calming actives for congested skin.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$135</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Lumière Signature</h5>
-                           <p>ur most complete ritual — LED, lymphatic massage, and a bespoke mask.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$185</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-             
-                    
-                
-            </div>
-            <div class="service-img">
-                    <img src="images/facial-3.webp" alt="" width="700" height="700" loading="lazy">
-                </div>
+                scripts/services.mjs
+            -->
 
-            </div>
-             <div class="card-section">
-                 <div class="service-img">
-                    <img src="images/nails-9.webp" alt="" width="700" height="600" loading="lazy">
-                </div>
-
-                <div class="image-data">
-                <h4>Clean shapes, quiet polish.</h4>
-                <h1>Nails</h1>
-
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Classic Manicure 40 min</h5>
-                           <p>Shape, cuticle care, hand massage,  polish.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$65</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Gel Manicure 60 min</h5>
-                           <p>Long-wear color with a soft, glossy finish.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$120</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Spa Pedicure 60 min</h5>
-                           <p>Warm soak, exfoliation, massage, and polish.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$120</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                       <div class="data">
-                            <h5>Signature Full Set • 1 hr 30 min</h5>
-                            <p>Premium nail extensions with acrylic gel polish.</p>
-                        </div>
-
-                        <div class="data">
-                            <p>Price: <span>$200</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                    
-               
-            </div>
-
-            </div>
-              <div class="card-section">
-                <div class="image-data">
-                <h4>Efficient, kind, precise.</h4>
-                <h1>Waxing</h1>
-
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Brow Shape 20 min</h5>
-                           <p>Considered brow architecture, tailored to your face.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$28</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Lip or Chin 10 min</h5>
-                           <p>Quick, careful, quietly done.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$15</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Full Leg 45 min</h5>
-                           <p>Smooth from ankle to thigh, with a soothing finish.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$75</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Underarm 15 min</h5>
-                           <p>Fast and gentle, with cooling aftercare.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$25</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                    
-                
-            </div>
-            <div class="service-img">
-                    <img src="images/wax-90.png" alt="" width="700" height="600" loading="lazy">
-                </div>
-
-            </div>
-              <div class="card-section">
-                 <div class="service-img">
-                    <img src="images/billy-eylash.webp" alt="eyelash extention" width="700" height="600" loading="lazy">
-                </div>
-
-                <div class="image-data">
-                <h4>Yours, only more luminous.</h4>
-                <h1>Lashes</h1>
-
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Classic Lash Set90 min</h5>
-                           <p>One extension per natural lash — soft and everyday.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$150</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Hybrid Set 120 min</h5>
-                           <p>A blend of classic and volume for gentle drama.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$185</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="info">
-                    <div class="inner-data">
-                        <div class="data">
-                          <h5>Lash Lift & Tint 60 min</h5>
-                           <p>A subtle curl and depth without extensions.</p>
-                        </div>
-                        <div class="data">
-                           <p>Price: <span>$95</span></p>
-                        </div>
-                        
-                    </div>
-                </div>
-              
-                    
-               
-            </div>
-
-            </div>
-        </section>
-        </section>
         </section>
 
+
+        <!-- ================= BOOKING ================= -->
         <section class="book">
+
             <div class="book-section">
+
                 <h1>Ready when you are.</h1>
-                <p>Same-day availability is often possible. We keep a short waitlist too.</p>
-                <a href="contact.html" class="btn">BOOK AN APPOINTMENT</a>
+
+                <p>
+                    Same-day availability is often possible.
+                    We keep a short waitlist too.
+                </p>
+
+                <a href="contact.html" class="btn">
+                    BOOK AN APPOINTMENT
+                </a>
+
             </div>
+
         </section>
 
     </main>
 
-   <footer>
-    <div class="info">
-        <div class="main">
-            <p>Wellness Studio</p>
-            <p>Relax • Refresh • Renew</p>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="info">
+
+            <div class="main">
+                <p>Wellness Studio</p>
+                <p>Relax • Refresh • Renew</p>
+            </div>
+
+
+            <div class="main">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="references.html">References</a>
+
+            </div>
+
+
+            <div class="main">
+
+                <h4>Visit Us</h4>
+
+                <p>Johannesburg</p>
+                <p>+27 83 599 9310</p>
+
+            </div>
+
+
+            <div class="main">
+
+                <h4>Business Hours</h4>
+
+                <p>
+                    Mon-Fri
+                    <span>9:00 AM - 6:00 PM</span>
+                </p>
+
+                <p>
+                    Sat
+                    <span>9:00 AM - 4:00 PM</span>
+                </p>
+
+                <p>
+                    Sun
+                    <span>Closed</span>
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="main">
-            <h4>Quick Links</h4>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="references.html">References</a>
+
+        <!-- ================= SOCIAL MEDIA ================= -->
+        <div class="media">
+
+            <a href="#" aria-label="Facebook">
+                <img
+                    src="images/facebook.svg"
+                    alt="Facebook icon"
+                    width="30"
+                    height="30"
+                    loading="lazy">
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <img
+                    src="images/instagram.svg"
+                    alt="Instagram icon"
+                    width="30"
+                    height="30"
+                    loading="lazy">
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <img
+                    src="images/tiktok.svg"
+                    alt="TikTok icon"
+                    width="30"
+                    height="30"
+                    loading="lazy">
+            </a>
+
         </div>
 
-        <div class="main">
-            <h4>Visit Us</h4>
-            <p>Johannesburg</p>
-            <p>+27 83 599 9310</p>
+
+        <!-- ================= COPYRIGHT ================= -->
+        <div class="right">
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Mulopwe Banze Billy |
+                South Africa |
+                Billy Aura Wellness Studio.
+                All rights reserved.
+            </p>
+
+            <p id="lastModified"></p>
+
         </div>
 
-        <div class="main">
-            <h4>Business Hours</h4>
-            <p>Mon-Fri <span>9:00 AM - 6:00 PM</span></p>
-            <p>Sat <span>9:00 AM - 4:00 PM</span></p>
-            <p>Sun <span>Closed</span></p>
-        </div>
-    </div>
+    </footer>
 
-    <div class="media">
-        <a href="#" aria-label="Facebook">
-            <img src="images/facebook.svg" alt="Facebook icon" width="30" height="30" loading="lazy">
-        </a>
-
-        <a href="#" aria-label="Instagram">
-            <img src="images/instagram.svg" alt="Instagram icon" width="30" height="30" loading="lazy">
-        </a>
-
-        <a href="#" aria-label="TikTok">
-            <img src="images/tiktok.svg" alt="TikTok icon" width="30" height="30" loading="lazy">
-        </a>
-    </div>
-
-    <div class="right">
-        <p>
-            &copy; <span id="currentyear"></span>
-            Mulopwe Banze Billy | South Africa | Billy Aura Wellness Studio. All rights reserved.
-        </p>
-
-        <p id="lastModified"></p>
-    </div>
-</footer>
 </body>
 </html>
-
-
-
-
-
-
-
 

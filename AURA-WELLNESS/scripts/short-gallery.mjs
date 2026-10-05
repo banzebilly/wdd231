@@ -1,10 +1,10 @@
 let smallGallery = [];
 
-const shortContainer = document.querySelector("#short-menu");
+const shortContainer = document.querySelector("#short-container");
 
 export async function shortGallery() {
     try {
-        const response = await fetch("project/data/chort-gallery.json");
+        const response = await fetch("data/chort-menu.json");
 
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
