@@ -183,12 +183,13 @@
     /* ---------- Contact ---------- */
 
     .contact {
-        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        grid-template-columns:1fr;
     }
 
     .contact .contact-info {
         width: 100%;
-        padding-right: 2rem;
+        padding-right: var(--space-4);
         margin: 2rem 1rem;
     }
 
@@ -198,8 +199,9 @@
     }
 
     .user-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
+    
 
     /* ---------- Footer ---------- */
 
@@ -482,20 +484,29 @@
     }
 
     /* ---------- Contact ---------- */
-
+     .form-content{
+        margin-right: var(--space-8);
+    }
     .contact{
         grid-template-columns:1fr;
+        padding: var(--space-2);
     }
 
     .contact .contact-info{
-        margin:2rem 1rem;
+        margin:var(--space-4) var(--space-2);
         width:100%;
-        padding:2rem;
+        padding-right: var(--space-16);
+        
     }
 
     .form-content{
+        grid-template-columns: 1fr;
         width:100%;
-        margin:0;
+        
+    }
+    .form-content .user-grid{
+        grid-template-columns: 1fr;
+       
     }
    
 
@@ -511,6 +522,9 @@
         width:100%;
         margin:2rem 0;
     }
+
+    
+
 
     /* ---------- Thank You ---------- */
 
@@ -681,7 +695,7 @@
     .services-menu,
     .book,
     .team-info{
-        padding:var(--space-6) var(--space-6);
+        padding:var(--space-4);
     }
 
     /* ---------- About ---------- */
@@ -734,14 +748,39 @@
     }
 
     /* ---------- Contact ---------- */
-
-    .contact .contact-info{
-        margin:1.5rem .8rem;
-    }
-
     .form-content{
-        padding:0;
+        margin-right: var(--space-8);
     }
+    .contact {
+        width: 100%;
+        padding: 0;
+        
+    }
+    .contact .contact-info{
+        width: 100%;
+        padding: var(--space-2) var(--space-4);
+      
+        
+    }
+   
+   
+
+    .contact .contact-info .b {
+    max-width: 360px;;
+ 
+    
+    }
+  
+
+    
+  
+    .form-content .user-grid{
+        grid-template-columns: 1fr;
+        
+    }
+    
+
+    
 
     .user-grid label{
         padding:.3rem;
@@ -750,6 +789,20 @@
     .user-grid button{
         width:100%;
         margin:1.5rem 0;
+    }
+
+    .contact .contact-info .b {
+        width: 100%;
+        margin-right: var(--space-16);
+ 
+    
+}
+
+    .contact .contact-info .studio-addr .hours {
+    
+    flex-direction: column;
+
+    
     }
 
     /* ---------- Appointment ---------- */
