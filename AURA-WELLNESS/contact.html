@@ -28,16 +28,16 @@
         rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link
+    <!-- <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/aura.css">
     <link rel="stylesheet" href="styles/aura-small.css">
 
-    <!-- JavaScript -->
-    <script src="scripts/aura.js" type="module"></script>
+    
+    <script src="scripts/aura.mjs" type="module"></script>
     <script src="scripts/form-action.js" defer></script>
 </head>
 
@@ -202,38 +202,15 @@
                                 required>
                         </label>
 
-                        <label for="service">
-                            Service *
+                        <label for="service">Service *
 
-                            <select
-                                id="service"
-                                name="service"
-                                required>
-
-                                <option value="" disabled selected>
-                                    Select a Service
-                                </option>
-
-                                <option value="massage">
-                                    Massage
-                                </option>
-
-                                <option value="facial">
-                                    Facial
-                                </option>
-
-                                <option value="nails">
-                                    Nails
-                                </option>
-
-                                <option value="waxing">
-                                    Waxing
-                                </option>
-
-                                <option value="eyelash">
-                                    Eyelash Extensions
-                                </option>
-
+                            <select id="services" name="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="massage">Massage</option>
+                                <option value="facial">Facial</option>
+                                <option value="nails">Nails</option>
+                                <option value="waxing">Waxing</option>
+                                <option value="eyelash">Eyelash Extensions</option>
                             </select>
                         </label>
 
