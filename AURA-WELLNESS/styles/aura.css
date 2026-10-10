@@ -96,6 +96,12 @@
     box-sizing: border-box;
 }
 
+h2 {
+    color: var(--white);
+    padding-bottom: var(--space-4);
+    letter-spacing: 2px;
+}
+
 
 /* =========================
    BODY
@@ -176,7 +182,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: var(--font-size-lg);
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     transition: border-color var(--transition-normal);
 }
 
@@ -644,7 +650,7 @@ section {
 .grid-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: var(--space-5);
 }
 
 .grid-gallery figure {
@@ -726,7 +732,7 @@ section {
 .about {
     background: var(--background);
 
-    padding: 5rem 2rem;
+    padding: var(--space-12) var(--space-8);
 }
 
 .about .about-data {
@@ -741,12 +747,12 @@ section {
     padding: var(--space-10);
 }
 
-.about .about-data .self-story h4 {
+.about .about-data .self-story .goal {
     color: var(--accent);
     padding-bottom: var(--space-4);
 }
 
-.about .about-data .self-story h1 {
+.about .about-data .self-story h2 {
     padding-bottom: var(--space-6);
 
     line-height: 1.2;
