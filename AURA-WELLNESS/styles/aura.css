@@ -169,21 +169,17 @@ nav {
     justify-content: space-around;
 }
 
+
 nav a {
     padding: var(--space-4);
-   
-   
     color: var(--primary);
-
     text-decoration: none;
-    
     font-weight: bold;
     font-size: var(--font-size-lg);
-
-    transition:var(--transition-normal);
-       
-    border-bottom: 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    transition: border-color var(--transition-normal);
 }
+
 
 
 /* Current page */
@@ -200,6 +196,11 @@ nav a:last-child {
     padding: var(--space-2) var(--space-5);
 
 }
+
+nav a:hover {
+    border-bottom-color: var(--accent);
+}
+
 
 
 /* =========================
