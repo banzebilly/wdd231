@@ -178,7 +178,7 @@ nav a {
     text-decoration: none;
     
     font-weight: bold;
-    font-size: 1rem;
+    font-size: var(--font-size-lg);
 
     transition:var(--transition-normal);
        
@@ -295,7 +295,7 @@ nav a:last-child {
 
 .btn:nth-last-child(1):hover {
     background: transparent;
-    box-shadow: 0 6px 18px rgba(174, 188, 206, 0.25);
+    box-shadow: var(--shadow-md)
 }
 
 
