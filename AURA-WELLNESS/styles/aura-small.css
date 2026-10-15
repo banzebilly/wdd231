@@ -380,7 +380,7 @@
     }
 
 
-      /* about us section  */
+      
       .about-us {
         min-height: auto;
         padding: var(--space-10) var(--space-4);
@@ -391,7 +391,7 @@
         gap: var(--space-6);
     }
 
-    /* Image appears above the text */
+   
 
     .about-us .about-page .about-image {
         width: 100%;
@@ -407,13 +407,12 @@
         object-fit: cover;
     }
 
-    /* Never show the second image on mobile */
 
     .about-us .about-page .about-image img:nth-child(2) {
         display: none;
     }
 
-    /* Text fills the available width */
+   
 
     .about-page .main-contents {
         width: 100%;

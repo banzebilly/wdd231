@@ -24,10 +24,10 @@
         "image": "images/nails-c.png"
     },
     {
-        "category": "massage",
-        "title": "deep tissue",
-        "subtitle": "Massage",
-        "image": "images/deep-tissue-5.webp"
+        "category": "waxing",
+        "title": "face Wax",
+        "subtitle": "Waxing",
+        "image": "images/wax-b.png"
     },
     {
         "category": "facial",
@@ -60,10 +60,10 @@
         "image": "images/nail-1.webp"
     },
     {
-        "category": "eyelash",
-        "title": "Classic Lash",
-        "subtitle": "Eyelash",
-        "image": "images/eyelash-9.png"
+        "category": "facial",
+        "title": "skin care",
+        "subtitle": "Facial",
+        "image": "images/facial-5.webp"
     },
     {
         "category": "nails",
@@ -78,10 +78,10 @@
         "image": "images/wax-b.png"
     },
     {
-        "category": "eyelash",
-        "title": "Classic Lash",
-        "subtitle": "Eyelash",
-        "image": "images/eyelash-87.webp"
+        "category": "massage",
+        "title": "deep tissue",
+        "subtitle": "Massage",
+        "image": "images/hotstone-5.webp"
     },
     {
         "category": "nails",
