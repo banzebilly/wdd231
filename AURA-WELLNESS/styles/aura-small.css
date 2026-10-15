@@ -65,20 +65,44 @@
 
 
     /* about us section  */
-   .about-us{
+
+   .about-us {
+        min-height: auto;
+        padding: var(--space-12) var(--space-6);
+    }
+
+    .about-us .about-page {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: var(--space-6);
+    }
+
+    
+
+    .about-us .about-page .about-image {
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .about-us .about-page .about-image img:first-child {
         width: 100%;
-        padding: var(--space-12);
-   }
-   .about-us .about-page{
-       grid-template-columns: 1fr 1fr;
+        height: 450px;
+    }
 
+    
 
-   }
-   .about-us .about-page img:last-child{
-       display: none;
+    .about-us .about-page .about-image img:nth-child(2) {
+        display: none;
+    }
 
+    
 
-   }
+    .about-page .main-contents {
+        padding-left: 0;
+    }
+
+    .about-page .main-contents h2 {
+        max-width: 100%;
+    }
 
     /* ---------- Services ---------- */
 
@@ -317,14 +341,27 @@
 
     /* ---------- Hero ---------- */
 
-    .hero{
-        min-height:65vh;
-        background:url("../images/deep-tissue-5.webp") center/cover no-repeat;
-    }
+   .hero {
+    width: 100%;
+    height: 80vh;
+    min-height: 650px;
 
-    .hero-video{
-        display:none;
-    }
+    background-image:
+        linear-gradient(
+            rgba(6, 29, 64, 0.65),
+            rgba(1, 20, 40, 0.70)
+        ),
+        url("../images/facial-1.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-self: start;
+}
+
+    
 
     .hero-content{
         padding:var(--space-8) var(--space-4);
@@ -344,23 +381,55 @@
 
 
       /* about us section  */
-   .about-us{
+      .about-us {
+        min-height: auto;
+        padding: var(--space-10) var(--space-4);
+    }
+
+    .about-us .about-page {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Image appears above the text */
+
+    .about-us .about-page .about-image {
         width: 100%;
-        padding: var(--space-12);
-   }
-   .about-us .about-page{
-       grid-template-columns: 1fr ;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0;
+    }
 
+    .about-us .about-page .about-image img:first-child {
+        display: block;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
 
-   }
-   .about-us .about-page img:last-child{
-       display: none;
+    /* Never show the second image on mobile */
 
+    .about-us .about-page .about-image img:nth-child(2) {
+        display: none;
+    }
 
-   }
-   .about-page .main-contents {
-    padding-right: var(--space-12);
-   }
+    /* Text fills the available width */
+
+    .about-page .main-contents {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-page .main-contents h2 {
+        max-width: 100%;
+    }
+
+    .about-page .main-contents p {
+        padding: var(--space-3) 0;
+    }
+  
+   
+   
 
     /* ---------- Services ---------- */
       .short-menu-section {
@@ -394,7 +463,7 @@
     .self-story{
         padding:0;
     }
-
+  
     /* ---------- Mission ---------- */
 
    .mission{
@@ -450,6 +519,14 @@
 
     .services-menu .service-img img{
         height:320px;
+        
+        overflow: hidden;
+    }
+    .services-menu .service-img {
+       
+        padding-bottom: var(--space-3);
+        
+        overflow: hidden;
     }
 
     .services-menu .image-data{
@@ -677,32 +754,71 @@
     
     }
 
-    /* ---------- Sections ---------- */
-      /* about us section  */
-   .about-us{
-        width: 100%;
-       
-   }
-   .about-us .about-page{
-       grid-template-columns: 1fr;
-       gap: var(--space-6);
-
-
-   }
-   .about-us .about-page img{
-     width: 100%;
+   
      
 
 
-   }
-   .about-us .about-page img:last-child{
-       display: none;
+/* ---------- About Us Section ---------- */
 
-   }
+  
+  
 
-   .about-page .main-contents {
-    padding-right: var(--space-12);
-}
+   
+
+   
+   .about-us {
+        padding: var(--space-8) var(--space-4);
+    }
+
+    .about-us .about-page {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-5);
+    }
+
+   
+
+    .about-us .about-page .about-image {
+        width: 100%;
+        max-width: 100%;
+       
+    }
+
+    .about-us .about-page .about-image img:first-child {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+  
+
+    .about-us .about-page .about-image img:nth-child(2) {
+        display: none;
+    }
+
+    
+    .about-page .main-contents {
+        width: 100%;
+        padding: var(--space-6);
+    }
+
+    .about-page .main-contents h2 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .about-page .main-contents p {
+        padding: var(--space-3) 0;
+        line-height: 1.6;
+    }
+
+    
+
+    .main-contents .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
     .about-us,
     .services,
     .about,
@@ -715,10 +831,17 @@
     }
 
     /* ---------- About ---------- */
+    .about-us{
+        width: 100%;
+        padding: 0;
+    }
 
     .about .story-img img{
         height:300px;
     }
+
+    
+
 
     /* ---------- Mission ---------- */
 
@@ -755,6 +878,7 @@
     .services-menu .service-img img{
         height:260px;
         margin-bottom: 1.2rem;
+        
     }
 
     .services-menu .info .inner-data{

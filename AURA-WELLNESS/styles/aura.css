@@ -232,6 +232,25 @@ nav a:hover {
     display: flex;
     justify-self: start;
 }
+.service-hero {
+    width: 100%;
+    height: 80vh;
+    min-height: 650px;
+
+    background-image:
+        linear-gradient(
+            rgba(6, 29, 64, 0.65),
+            rgba(1, 20, 40, 0.70)
+        ),
+        url("../images/wax-banner-a.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-self: start;
+}
 
 
 .hero-content {
@@ -322,6 +341,7 @@ section {
 
 .about-us {
     min-height: 700px;
+  
 }
 
 .about-us .about-page {
@@ -785,7 +805,7 @@ section {
             rgba(0, 0, 0, 0.45),
             rgba(0, 0, 0, 0.45)
         ),
-        url("../images/mission-ba.webp");
+        url("../images/stone-massage.png");
 
     background-size: cover;
     background-position: center;

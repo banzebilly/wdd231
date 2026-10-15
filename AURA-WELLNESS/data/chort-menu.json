@@ -4,10 +4,10 @@
 [
    
     {
-        "category": "facial",
-        "title": "Facial",
-        "subtitle": "Mask",
-        "image": "images/facial-2.jpg"
+        "category": "massage",
+        "title": "massage",
+        "subtitle": "swedish massage",
+        "image": "images/massage-a.png"
     },
     {
         "category": "facial",
@@ -30,7 +30,7 @@
     {
         "category": "waxing",
         "title": "Leg Wax",
-        "subtitle": "Cold Wax",
-        "image": "images/wax-3.jpg"
+        "subtitle": "under arms wax",
+        "image": "images/wax-a.png"
     }
 ]

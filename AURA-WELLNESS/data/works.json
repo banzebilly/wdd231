@@ -1,9 +1,9 @@
 [
     {
         "category": "massage",
-        "title": "Hot stone",
+        "title": "swedish Massage",
         "subtitle": "Massage",
-        "image": "images/hotstone-massage.webp"
+        "image": "images/massage-a.png"
     },
     {
         "category": "facial",
@@ -18,10 +18,10 @@
         "image": "images/nail-14.png"
     },
     {
-        "category": "eyelash",
-        "title": "Classic Lash",
-        "subtitle": "Eyelash",
-        "image": "images/eyelash-5.webp"
+        "category": "nails",
+        "title": "full set",
+        "subtitle": "Tips,Acrelic,Gel",
+        "image": "images/nails-c.png"
     },
     {
         "category": "massage",
@@ -75,7 +75,7 @@
         "category": "waxing",
         "title": "face Wax",
         "subtitle": "Waxing",
-        "image": "images/wax-1.webp"
+        "image": "images/wax-b.png"
     },
     {
         "category": "eyelash",
@@ -97,8 +97,8 @@
     },
     {
         "category": "waxing",
-        "title": "leg Wax",
+        "title": "under arms Wax",
         "subtitle": "Waxing",
-        "image": "images/wax-3.jpg"
+        "image": "images/wax-a.png"
     }
 ]
