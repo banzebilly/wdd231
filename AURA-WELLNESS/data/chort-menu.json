@@ -5,32 +5,32 @@
    
     {
         "category": "massage",
-        "title": "massage",
-        "subtitle": "swedish massage",
+        "title": "Swedish Massage",
+        "subtitle": "Afleurage Technic",
         "image": "images/massage-a.png"
     },
     {
-        "category": "facial",
-        "title": "Facial",
-        "subtitle": "Mask",
+        "category": "nails",
+        "title": "fullset",
+        "subtitle": "acrelic",
         "image": "images/nail-12.webp"
     },
     {
         "category": "facial",
         "title": "Facial",
         "subtitle": "Mask",
-        "image": "images/sport-massage-3.jpg"
+        "image": "images/facial-5.webp"
     },
     {
         "category": "massage",
         "title": "Swedish Massage",
-        "subtitle": "Massage",
-        "image": "images/swidish-4.webp"
+        "subtitle": "Friction Technic",
+        "image": "images/friction.png"
     },
     {
         "category": "waxing",
-        "title": "Leg Wax",
-        "subtitle": "under arms wax",
+        "title": "under arms Wax",
+        "subtitle": "cold wax",
         "image": "images/wax-a.png"
     }
 ]

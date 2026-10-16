@@ -2,7 +2,7 @@
     {
         "category": "massage",
         "title": "swedish Massage",
-        "subtitle": "Massage",
+        "subtitle": "afleurage technic",
         "image": "images/massage-a.png"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
         "category": "waxing",
-        "title": "face Wax",
+        "title": "Leg Wax",
         "subtitle": "Waxing",
         "image": "images/wax-b.png"
     },
@@ -81,7 +81,7 @@
         "category": "massage",
         "title": "deep tissue",
         "subtitle": "Massage",
-        "image": "images/hotstone-5.webp"
+        "image": "images/deep.png"
     },
     {
         "category": "nails",
@@ -91,9 +91,9 @@
     },
     {
         "category": "massage",
-        "title": "swedish Massage",
-        "subtitle": "Swedish",
-        "image": "images/swidish-4.webp"
+        "title": "Hot stone",
+        "subtitle": "massage",
+        "image": "images/hotstone.png"
     },
     {
         "category": "waxing",

@@ -488,6 +488,22 @@
         padding-bottom: var(--space-8);
         
     }
+     .clients {
+        padding: var(--space-12) var(--space-5);
+    }
+
+    .testimonial {
+        padding: var(--space-8) var(--space-5);
+    }
+
+    .testimonial-text {
+        font-size: var(--font-size-lg);
+        line-height: 1.7;
+    }
+
+    .testimonial-controls {
+        gap: var(--space-4);
+    }
     
 
     /* ---------- Team ---------- */
@@ -872,6 +888,57 @@
         height:240px;
     }
 
+
+     .clients {
+        padding: var(--space-10) var(--space-4);
+    }
+
+    .clients h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .clients-intro {
+        font-size: var(--font-size-sm);
+    }
+
+    .testimonial {
+        padding: var(--space-6) var(--space-4);
+    }
+
+    .testimonial-text {
+        font-size: var(--font-size-base);
+        line-height: 1.7;
+    }
+
+    .testimonial-author {
+        font-size: var(--font-size-sm);
+    }
+
+    .testimonial-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .testimonial-controls {
+        gap: var(--space-3);
+    }
+
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .testimonial {
+        animation: none;
+    }
+
+    .testimonial-btn,
+    .testimonial-dot {
+        transition: none;
+    }
+
+
     /* ---------- Services ---------- */
 
     .services-menu .service-img img{
@@ -885,6 +952,7 @@
         align-items:flex-start;
         gap:.6rem;
     }
+
 
     /* ---------- Contact ---------- */
     .form-content{

@@ -223,7 +223,7 @@ nav a:hover {
             rgba(6, 29, 64, 0.65),
             rgba(1, 20, 40, 0.70)
         ),
-        url("../images/mission-ba.webp");
+        url("../images/billy-massage.png");
 
     background-size: cover;
     background-position: center;
@@ -232,25 +232,7 @@ nav a:hover {
     display: flex;
     justify-self: start;
 }
-.service-hero {
-    width: 100%;
-    height: 80vh;
-    min-height: 650px;
 
-    background-image:
-        linear-gradient(
-            rgba(6, 29, 64, 0.65),
-            rgba(1, 20, 40, 0.70)
-        ),
-        url("../images/wax-banner-a.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-self: start;
-}
 
 
 .hero-content {
@@ -847,35 +829,169 @@ section {
    /* CLIENT EXPERIENCE - INDEX */
 
 
+/* =========================================
+   CLIENT EXPERIENCE - INDEX
+   Testimonial Carousel
+========================================= */
+
 .clients {
-    background: var(--muted);
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    flex-direction: column;
-
-    padding: 5rem 2rem;
+    padding: var(--section-padding) var(--space-5);
+    margin-bottom: var(--space-20);
+    background: var(--section-bg);
+    text-align: center;
 }
 
-.clients h5 {
-    padding-bottom: 2rem;
-
-    color: var(--accent);
-
-    font-weight: bold;
-
-    line-height: 1.2;
-}
+/* Section heading */
 
 .clients h2 {
-    padding-bottom: 2rem;
+    padding-bottom: var(--space-3);
+    color: var(--primary);
+    letter-spacing: 2px;
+}
 
-    font-weight: bold;
+/* Introductory text */
 
-    line-height: 1.1;
+.clients-intro {
+    margin-bottom: var(--space-8);
+    color: var(--secondary);
+    line-height: 1.7;
+}
+
+/* Carousel container */
+
+.testimonial-carousel {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Testimonial display area */
+
+.testimonial-track {
+    position: relative;
+}
+
+/* Individual testimonials */
+
+.testimonial {
+    display: none;
+    padding: var(--space-10) var(--space-8);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    animation: testimonial-fade var(--transition-normal);
+}
+
+.testimonial.active {
+    display: block;
+}
+
+/* Client review */
+
+.testimonial-text {
+    max-width: 580px;
+    margin: 0 auto var(--space-6);
+    color: var(--secondary);
+    font-size: var(--font-size-xl);
+    line-height: 1.8;
+    font-style: italic;
+}
+
+/* Client name */
+
+.testimonial-author {
+    margin-bottom: var(--space-2);
+    color: var(--primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Star rating */
+
+.testimonial-stars {
+    margin: 0;
+    color: var(--accent);
+    font-size: var(--font-size-xl);
+    letter-spacing: 3px;
+}
+
+/* Carousel navigation controls */
+
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+/* Previous and next buttons */
+
+.testimonial-btn {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    background: var(--white);
+    color: var(--primary);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    transition: background var(--transition-normal),
+                color var(--transition-normal);
+}
+
+.testimonial-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Navigation dots */
+
+.testimonial-dots {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.testimonial-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-full);
+    background: var(--border);
+    cursor: pointer;
+    transition: background var(--transition-normal),
+                transform var(--transition-normal);
+}
+
+.testimonial-dot.active {
+    background: var(--orange);
+    transform: scale(1.2);
+}
+
+/* Keyboard accessibility */
+
+.testimonial-btn:focus-visible,
+.testimonial-dot:focus-visible {
+    outline: 2px solid var(--orange);
+    outline-offset: 4px;
+}
+
+/* Testimonial entrance animation */
+
+@keyframes testimonial-fade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
