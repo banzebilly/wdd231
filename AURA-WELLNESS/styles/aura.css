@@ -826,13 +826,13 @@ section {
 }
 
 
-   /* CLIENT EXPERIENCE - INDEX */
+  
 
 
-/* =========================================
-   CLIENT EXPERIENCE - INDEX
-   Testimonial Carousel
-========================================= */
+
+   /* CLIENT EXPERIENCE - INDEX
+   Testimonial Carousel */
+
 
 .clients {
     padding: var(--section-padding) var(--space-5);
@@ -841,7 +841,7 @@ section {
     text-align: center;
 }
 
-/* Section heading */
+
 
 .clients h2 {
     padding-bottom: var(--space-3);
@@ -849,7 +849,7 @@ section {
     letter-spacing: 2px;
 }
 
-/* Introductory text */
+
 
 .clients-intro {
     margin-bottom: var(--space-8);
@@ -857,20 +857,19 @@ section {
     line-height: 1.7;
 }
 
-/* Carousel container */
+
 
 .testimonial-carousel {
     max-width: 750px;
     margin: 0 auto;
 }
 
-/* Testimonial display area */
 
 .testimonial-track {
     position: relative;
 }
 
-/* Individual testimonials */
+
 
 .testimonial {
     display: none;
@@ -886,7 +885,7 @@ section {
     display: block;
 }
 
-/* Client review */
+
 
 .testimonial-text {
     max-width: 580px;
@@ -897,7 +896,7 @@ section {
     font-style: italic;
 }
 
-/* Client name */
+
 
 .testimonial-author {
     margin-bottom: var(--space-2);
@@ -905,7 +904,7 @@ section {
     font-weight: var(--font-weight-semibold);
 }
 
-/* Star rating */
+
 
 .testimonial-stars {
     margin: 0;
@@ -914,7 +913,7 @@ section {
     letter-spacing: 3px;
 }
 
-/* Carousel navigation controls */
+
 
 .testimonial-controls {
     display: flex;
@@ -924,7 +923,7 @@ section {
     margin-top: var(--space-6);
 }
 
-/* Previous and next buttons */
+
 
 .testimonial-btn {
     display: grid;
@@ -947,7 +946,7 @@ section {
     color: var(--white);
 }
 
-/* Navigation dots */
+
 
 .testimonial-dots {
     display: flex;
@@ -972,7 +971,7 @@ section {
     transform: scale(1.2);
 }
 
-/* Keyboard accessibility */
+
 
 .testimonial-btn:focus-visible,
 .testimonial-dot:focus-visible {
@@ -980,7 +979,7 @@ section {
     outline-offset: 4px;
 }
 
-/* Testimonial entrance animation */
+
 
 @keyframes testimonial-fade {
     from {
@@ -996,7 +995,7 @@ section {
 
 
 
-   /* BOOKING CTA - INDEX */
+  
 
 
 .book {
